@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/window_background"
+    tools:ignore="all">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/CalcTableLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CalcTableTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/calc_type"/>
+
+            <RadioGroup
+                android:id="@+id/rg_calc_type"
+                style="@style/MineTableTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_loan_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calc_loan_total"/>
+
+                <RadioButton
+                    android:id="@+id/rb_mortgage_ratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/calc_mortgage_ratio"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_house_total"
+            style="@style/CalcTableLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CalcTableTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/calc_house_total"/>
+
+            <LinearLayout
+                style="@style/MineCalcLinearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/aet_house_total"
+                    style="@style/MineTableEditText"
+                    android:maxLength="5"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/MineCalcRightTextView"
+                    android:text="@string/calc_wan_yuan"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ratio"
+            style="@style/CalcTableLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CalcTableTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/calc_down_payment"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_ratio"
+                style="@style/MineCalcRightTextView"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                tools:text="三成"/>
+
+            <include layout="@layout/arrow_table"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_loan_total"
+            style="@style/CalcTableLayout"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CalcTableTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/calc_loan_total"/>
+
+            <LinearLayout
+                style="@style/MineCalcLinearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/aet_loan_total"
+                    style="@style/MineTableEditText"
+                    android:maxLength="5"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/MineCalcRightTextView"
+                    android:text="@string/calc_wan_yuan"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/CalcTableLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CalcTableTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/calc_loan_period"/>
+
+            <LinearLayout
+                style="@style/MineCalcLinearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/aet_year"
+                    style="@style/MineTableEditText"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:maxWidth="100dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/MineCalcRightTextView"
+                    android:text="@string/calc_unit_year"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_loan_type"
+            style="@style/CalcTableLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CalcTableTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/calc_loan_type"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_loan_type"
+                style="@style/MineCalcRightTextView"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/calc_average_interest"/>
+
+            <include layout="@layout/arrow_table"/>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/CalcTableLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CalcTableTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/calc_first"/>
+
+            <!--<android.support.v7.widget.SwitchCompat-->
+                <!--android:id="@+id/sc_first"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:checked="true"/>-->
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/sc_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:checked="true"
+                app:kswBackDrawable="@drawable/flyme_back_drawable"
+                app:kswBackMeasureRatio="2.2"
+                app:kswThumbDrawable="@drawable/flyme_thumb_drawable"
+                app:kswThumbHeight="16dp"
+                app:kswThumbWidth="16dp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_yes_no"
+                style="@style/CalcTableTextView"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="@string/calc_yes"
+                android:textColor="@color/black_medium"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/CalcTableLayout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CalcTableTextView"
+                android:text="@string/calc_loan_rate"/>
+
+            <LinearLayout
+                style="@style/MineCalcLinearLayout"
+                android:layout_marginLeft="5dp"
+                android:background="@color/window_background"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/aet_loan_rate"
+                    style="@style/MineTableEditText"
+                    android:layout_width="50dp"
+                    tools:text="5.4"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/MineTableTextView"
+                    android:text="@string/calc_percent"
+                    android:textColor="@color/appBaseColor"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/calc_multiply"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                style="@style/MineCalcLinearLayout"
+                android:background="@color/window_background"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/aet_times"
+                    style="@style/MineTableEditText"
+                    android:layout_width="50dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/MineTableTextView"
+                    android:text="@string/calc_interest_times"
+                    android:textColor="@color/appBaseColor"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/MineTableTextView"
+                android:text="@string/calc_equals"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_latest_rate"
+                style="@style/MineCalcRightTextView"
+                android:layout_gravity="center_vertical"
+                tools:text="5.4%"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/atv_tips"
+            style="@style/MineTableTextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            tools:text="最新商业贷款利率5.4%"/>
+
+        <TextView
+            android:id="@+id/btn_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:enabled="false"
+            android:text="@string/btn_start_calc"
+            android:textSize="16sp"
+            android:textColor="@color/btn_custom_txt_color"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/btn_custom_bg"
+            />
+
+    </LinearLayout>
+</ScrollView>

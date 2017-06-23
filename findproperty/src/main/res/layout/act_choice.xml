@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_choice_page"/>
+
+    <TextView
+        android:id="@+id/choice_tip_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:lineSpacingExtra="10dp"
+        android:gravity="center"
+        android:text="建议您填写找房意向,\n第一时间获取最新房源通知服务。"
+        android:textColor="@color/black_medium"
+        android:textSize="@dimen/textSmall"/>
+
+    <Button
+        android:id="@+id/choice_bt_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_intent_next"
+        android:text="登录填写意向"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_no_thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="不, 谢谢"
+        android:textColor="@color/textRed"/>
+
+
+</LinearLayout>

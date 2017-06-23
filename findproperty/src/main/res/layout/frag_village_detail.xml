@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinatorLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="all">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+                <com.cetnaline.findproperty.widgets.DetailImgLayout
+                    android:id="@+id/detail_dl_imgs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/detail_tv_street"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/tv_out_door_bg"
+                    android:drawableLeft="@drawable/ic_map_outdoor"
+                    android:drawablePadding="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="6dp"
+                    android:text="实景"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/detail_image_gradient_bg"/>
+
+            </FrameLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.AppBarOverlay.White">
+
+                <TextView
+                    android:id="@+id/center_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:textSize="@dimen/title"/>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/est_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginTop="40dp"
+                android:textSize="@dimen/title"/>
+
+            <View
+                style="@style/horizontalBlackLine"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginRight="@dimen/marginRight"
+                android:layout_marginTop="30px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/estate_sale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在售"
+                        android:textSize="@dimen/subTitle"/>
+
+                    <com.cetnaline.findproperty.widgets.MyText
+                        android:id="@+id/est_saleing_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:leftTextColor="@color/textRed"
+                        app:leftTextSize="@dimen/title"
+                        app:rightText="套"
+                        app:rightTextColor="@color/textRed"
+                        app:rightTextSize="@dimen/subTitle"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/blackLine"/>
+
+                <LinearLayout
+                    android:id="@+id/estate_rent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="出租"
+                        android:textSize="@dimen/subTitle"/>
+
+                    <com.cetnaline.findproperty.widgets.MyText
+                        android:id="@+id/est_sale_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:leftTextColor="@color/textRed"
+                        app:leftTextSize="@dimen/title"
+                        app:rightText="套"
+                        app:rightTextColor="@color/textRed"
+                        app:rightTextSize="@dimen/subTitle"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/horizontalBlackLine"
+                android:layout_marginLeft="@dimen/marginLeft"
+                android:layout_marginRight="@dimen/marginRight"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/est_ll_price"
+                style="@style/villageLinearLayoutStyle">
+
+                <TextView
+                    style="@style/villageLeftTextStyle"
+                    android:text="小区均价"/>
+
+                <TextView
+                    android:id="@+id/est_av_price"
+                    style="@style/villageRightTextStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/est_ll_type"
+                style="@style/villageLinearLayoutStyle">
+
+                <TextView
+                    style="@style/villageLeftTextStyle"
+                    android:text="房屋类型"/>
+
+                <TextView
+                    android:id="@+id/est_tv_type"
+                    style="@style/villageRightTextStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/est_ll_ratio"
+                style="@style/villageLinearLayoutStyle">
+
+                <TextView
+                    style="@style/villageLeftTextStyle"
+                    android:text="容积率"/>
+
+                <TextView
+                    android:id="@+id/est_tv_ratio"
+                    style="@style/villageRightTextStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/est_ll_green"
+                style="@style/villageLinearLayoutStyle">
+
+                <TextView
+                    style="@style/villageLeftTextStyle"
+                    android:text="绿化率"/>
+
+                <TextView
+                    android:id="@+id/est_tv_green"
+                    style="@style/villageRightTextStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/est_ll_place"
+                style="@style/villageLinearLayoutStyle">
+
+                <TextView
+                    style="@style/villageLeftTextStyle"
+                    android:text="车位数"/>
+
+                <TextView
+                    android:id="@+id/est_car_place"
+                    style="@style/villageRightTextStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/est_ll_year"
+                style="@style/villageLinearLayoutStyle">
+
+                <TextView
+                    style="@style/villageLeftTextStyle"
+                    android:text="建造年代"/>
+
+                <TextView
+                    android:id="@+id/est_build_year"
+                    style="@style/villageRightTextStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/est_ll_proprice"
+                style="@style/villageLinearLayoutStyle">
+
+                <TextView
+                    style="@style/villageLeftTextStyle"
+                    android:text="物业费"/>
+
+                <TextView
+                    android:id="@+id/est_property_price"
+                    style="@style/villageRightTextStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/est_ll_company"
+                style="@style/villageLinearLayoutStyle">
+
+                <TextView
+                    style="@style/villageLeftTextStyle"
+                    android:text="物业公司"/>
+
+                <TextView
+                    android:id="@+id/est_property_company"
+                    style="@style/villageRightTextStyle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/est_ll_developer"
+                style="@style/villageLinearLayoutStyle"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    style="@style/villageLeftTextStyle"
+                    android:text="开发商"/>
+
+                <TextView
+                    android:id="@+id/est_tv_developer"
+                    style="@style/villageRightTextStyle"/>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/layout_map_location"/>
+
+            <Button
+                android:id="@+id/detail_bt_nearby"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="180px"
+                android:layout_height="60px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bt_line_black"
+                android:text="位置及周边"/>
+
+            <LinearLayout
+                android:id="@+id/detail_ll_trend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:background="@color/grayLine"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titleTextStyle"
+                    android:text="价格走势"/>
+
+                <com.cetnaline.findproperty.widgets.chart.SaleLineChart2
+                    android:id="@+id/detail_sale_lc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="20px">
+
+                </com.cetnaline.findproperty.widgets.chart.SaleLineChart2>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

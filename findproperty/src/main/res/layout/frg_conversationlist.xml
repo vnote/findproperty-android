@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="咨询"
+            android:gravity="center"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/title" />
+
+        <ImageView
+            android:id="@+id/menu_btn"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add_black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <View style="@style/horizontalBigLine"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rc_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/rc_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/rc_notification_network_available"
+                android:drawablePadding="25dp"
+                android:paddingLeft="27dp"
+                android:text="当前网络不可用"
+                android:textColor="#776868"
+                android:background="#ffdfdf"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@id/rc_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:layout_below="@+id/rc_status_bar"
+                android:divider="@null"
+                android:background="@color/rc_text_color_primary_inverse" />
+
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="113dp"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/no_conversation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chat_no_record" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/list_hint_color"
+                android:textSize="16sp"
+                android:text="您还没有顾问消息" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/list_hint_color"
+                android:textSize="16sp"
+                android:text="试试寻找附近的中原顾问为你找房吧" />
+
+            <TextView
+                android:id="@+id/show_nearby"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/appBaseColor"
+                android:background="@drawable/chat_btn_bg"
+                android:text="查看附近顾问"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/show_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:drawableRight="@drawable/ic_right_arrow_yellow_sel"
+                android:drawablePadding="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/list_search_color"
+                android:text="全部顾问" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

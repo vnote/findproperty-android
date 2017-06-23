@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="无故爽约"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:textColor="@color/grayText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayLine"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="态度恶劣"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:textColor="@color/grayText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayLine"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="频繁骚扰"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:textColor="@color/grayText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayLine"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="不接电话"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:textColor="@color/grayText" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayLine"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="业务不熟悉"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:textColor="@color/grayText" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayLine"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="其他"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:textColor="@color/grayText" />
+
+</LinearLayout>

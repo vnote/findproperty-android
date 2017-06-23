@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/item_estate_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/test_pic"
+                android:scaleType="fitXY"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/text_gradient_bg"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/item_estate_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/subTitle"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:text="瑞红新城"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/item_estate_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/subTitle"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/item_estate_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/grayText"
+                android:text="1室1厅|54m|南"/>
+
+            <com.cetnaline.findproperty.widgets.MyText
+                android:id="@+id/item_estate_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:leftText="26,888"
+                app:leftTextColor="@color/textRed"
+                app:leftTextSize="@dimen/title"
+                app:rightText="元/㎡"
+                app:rightTextColor="@color/textRed"
+                app:rightTextSize="@dimen/subTitle">
+
+            </com.cetnaline.findproperty.widgets.MyText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/item_estate_price"
+                android:layout_toLeftOf="@id/item_estate_price"
+                android:textColor="@color/textRed"
+                android:text="均价："/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.cetnaline.findproperty.widgets.FormItemLayout
+                android:id="@+id/village_name"
+                app:title="小区名称"
+                app:content_hint="请输入房源所在小区"
+                app:input_enable="false"
+                app:show_ext="true"
+                app:show_right_img="true"
+                app:show_touch_view="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.cetnaline.findproperty.widgets.FormItemLayout
+                android:id="@+id/village_address"
+                app:title="小区地址"
+                app:input_enable="true"
+                app:content_hint="请输入小区地址"
+                app:show_ext="false"
+                app:show_right_img="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.cetnaline.findproperty.widgets.FormItemLayout
+                android:id="@+id/building_no"
+                app:title="房源楼号"
+                app:input_enable="false"
+                app:content_hint="请输入楼号"
+                app:show_ext="false"
+                app:show_touch_view="true"
+                app:input_length="10"
+                app:show_right_img="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.cetnaline.findproperty.widgets.FormItemLayout
+                android:id="@+id/room_no"
+                app:title="房源室号"
+                app:input_enable="false"
+                app:content_hint="请输入室号"
+                app:show_ext="false"
+                app:input_length="10"
+                app:show_right_img="false"
+                app:show_touch_view="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.cetnaline.findproperty.widgets.FormItemLayout
+                android:id="@+id/room_location"
+                app:title="小区坐标"
+                android:visibility="gone"
+                app:input_enable="false"
+                app:content_hint=""
+                app:show_ext="true"
+                app:content_ext="未选择"
+                app:show_right_img="true"
+                app:show_touch_view="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/grayLine"/>
+
+            <com.cetnaline.findproperty.widgets.FormItemLayout
+                android:id="@+id/room_type"
+                app:title="户型"
+                app:content_hint="请选择户型"
+                app:input_enable="false"
+                app:show_ext="false"
+                app:show_right_img="false"
+                app:show_touch_view="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.cetnaline.findproperty.widgets.FormItemLayout
+                android:id="@+id/room_area"
+                app:title="面积"
+                app:content_hint="请输入面积"
+                app:content_ext="平方米"
+                app:show_ext="true"
+                app:input_length="6"
+                app:show_right_img="false"
+                app:input_type="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/grayLine"/>
+
+            <com.cetnaline.findproperty.widgets.RemarkEditTextLayout
+                android:id="@+id/remark"
+                app:content_hint="补充房源信息，帮助快速成交..."
+                app:max_length="140"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:background="@color/appBaseColor"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

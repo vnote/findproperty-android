@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/ic_railway_bg"
+    android:orientation="horizontal"
+    tools:ignore="all">
+
+    <android.support.v7.widget.AppCompatImageView
+        app:srcCompat="@drawable/ic_school"
+        android:scaleType="centerCrop"
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+    <View
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/blackLine"
+        android:layout_width="1dp"
+        android:layout_height="18dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/map_rail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/text_body"
+        android:text="中心小学"/>
+
+</LinearLayout>

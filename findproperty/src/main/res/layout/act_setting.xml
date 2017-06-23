@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View style="@style/horizontalBigLine"/>
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/language_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu_title="@string/setting_language"
+            android:visibility="gone"/>
+
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/push_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu_title="@string/setting_push"/>
+
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu_title="@string/setting_cache"/>
+
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/check_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu_title="@string/setting_update"/>
+
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/suggest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu_title="@string/setting_suggest"
+            android:visibility="gone"
+            />
+
+        <View style="@style/horizontalBigLine"/>
+
+
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu_title="@string/setting_about_us"/>
+
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/reword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:menu_title="@string/setting_reword"/>
+
+        <View style="@style/horizontalBigLine"/>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="退出登录"
+            android:gravity="center"
+            android:textSize="@dimen/title"
+            android:textColor="@color/appBaseColor" />
+
+        <View style="@style/horizontalBigLine"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:gravity="center"
+        android:id="@+id/version_tx"
+        android:text="版本号:" />
+
+</RelativeLayout>
+
+

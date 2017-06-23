@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cetnaline.findproperty.widgets.CircleImageView
+    android:id="@+id/desc_item_head"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:src="@drawable/default_head">
+
+</com.cetnaline.findproperty.widgets.CircleImageView>

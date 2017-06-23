@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="@dimen/subTitle"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nainai de  sda ad" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/submit"
+            android:textSize="@dimen/subTitle"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/appBaseColor"
+            android:text="确定" />
+
+    </LinearLayout>
+
+</LinearLayout>

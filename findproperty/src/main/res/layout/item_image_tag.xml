@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatCheckedTextView
+    android:id="@+id/tv_image_tag"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/image_tag_bg"
+    android:layout_marginLeft="6dp"
+    android:textColor="@color/img_text_color"
+    android:text="客厅(3)">
+
+</android.support.v7.widget.AppCompatCheckedTextView>

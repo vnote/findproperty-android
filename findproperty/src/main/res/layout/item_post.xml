@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="113dp"
+        android:layout_height="85dp">
+
+        <ImageView
+            android:id="@+id/post_img"
+            android:layout_width="109dp"
+            android:layout_height="81dp"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test_pic"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/img_cover"
+            android:visibility="gone"
+            android:layout_width="109dp"
+            android:layout_height="81dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:gravity="center"
+                android:text="已下架"
+                android:background="#99000000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/subTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/normalText"
+            android:text="11号线白硬度温热特而无法答复收费服务而额如风是否是否访问地方"
+            android:textSize="@dimen/subTitle"/>
+
+        <!--<View-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="1.5dp"-->
+            <!--android:layout_marginLeft="2dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@color/grayText"/>-->
+
+        <TextView
+            android:id="@+id/item_small_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_body"
+            android:layout_marginTop="5dp"
+            android:text="1室1厅|54m|南"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/item_small_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="250"
+                android:textSize="@dimen/title"
+                android:textColor="@color/appBaseColor"/>
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_body"
+                android:text="万"
+                android:textColor="@color/appBaseColor"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="8dp"
+            style="@style/horizontalBlackLine"
+            android:background="@color/grayBigLine"/>
+    </LinearLayout>
+
+</LinearLayout>

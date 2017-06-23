@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="124dp"
+    android:layout_marginTop="12dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/item_small_img"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:padding="3dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test_pic"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_small_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="11号线白硬度温热特而无法答复收费服务而额如风是否是否访问地方"
+            android:textSize="@dimen/subTitle" />
+
+        <TextView
+            android:id="@+id/item_small_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/item_small_title"
+            android:layout_marginTop="5dp"
+            android:text="1室1厅|54m|南" />
+
+        <com.cetnaline.findproperty.widgets.MyText
+            android:id="@+id/item_small_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:leftTextColor="@color/textRed"
+            app:leftTextSize="@dimen/subTitle"
+            android:layout_below="@id/item_small_house"
+            app:rightText="700万"
+            android:layout_marginTop="5dp"
+            app:rightTextColor="@color/textRed"
+            app:rightTextSize="@dimen/textSmall" />
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/item_rl_price"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/item_small_money"-->
+            <!--android:layout_marginBottom="6dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="6dp">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/item_small_est"-->
+                <!--style="@style/normalGrayText"-->
+                <!--android:maxLength="7"-->
+                <!--android:text="虹仙小区" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/item_small_price"-->
+                <!--style="@style/normalGrayText"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:text="4,658元/m" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+            <!--style="@style/horizontalBlackLine"-->
+            <!--android:layout_below="@id/item_rl_price"-->
+            <!--android:layout_marginBottom="6dp"-->
+            <!--android:background="@color/etHintColor" />-->
+
+        <LinearLayout
+            android:id="@+id/item_small_keys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

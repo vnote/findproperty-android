@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/blackLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/image_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu_title="头像"
+            app:show_image="true"/>
+
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/name_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu_title="姓名"/>
+
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/sex_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu_title="性别"/>
+
+        <com.cetnaline.findproperty.widgets.SettingMenuItem
+            android:id="@+id/phone_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu_title="手机号"/>
+
+        <View style="@style/horizontalBigLine"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第三方账户"
+            android:layout_margin="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/list_hint_color" />
+
+        <com.cetnaline.findproperty.widgets.MineMenuItem
+            android:layout_width="match_parent"
+            android:id="@+id/wx_setting"
+            android:layout_height="wrap_content"
+            app:left_img="@drawable/ic_wx"
+            app:left_sel_img="@drawable/ic_wx_sel"
+            app:title="微信"
+            app:show_hint="false"
+            app:show_arrow="false"
+            />
+
+        <com.cetnaline.findproperty.widgets.MineMenuItem
+            android:layout_width="match_parent"
+            android:id="@+id/qq_setting"
+            android:layout_height="wrap_content"
+            app:left_img="@drawable/ic_qq"
+            app:left_sel_img="@drawable/ic_qq_sel"
+            app:title="QQ"
+            app:show_hint="false"
+            app:show_arrow="false"
+            />
+
+        <com.cetnaline.findproperty.widgets.MineMenuItem
+            android:layout_width="match_parent"
+            android:id="@+id/wb_setting"
+            android:layout_height="wrap_content"
+            app:left_img="@drawable/ic_wb"
+            app:left_sel_img="@drawable/ic_wb_sel"
+            app:title="新浪微博"
+            app:show_hint="false"
+            app:show_arrow="false"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textSize="@dimen/gild_sub"
+        android:text="推送" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:textSize="@dimen/gild_sub"
+            android:text="推送" />
+
+        <!--<android.support.v7.widget.SwitchCompat-->
+            <!--android:id="@+id/sc_all"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textOn="@string/switchcompat_on"-->
+            <!--android:textOff="@string/switchcompat_off"-->
+            <!--android:checked="true"/>-->
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sc_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            app:kswBackDrawable="@drawable/flyme_back_drawable"
+            app:kswBackMeasureRatio="2.2"
+            app:kswThumbDrawable="@drawable/flyme_thumb_drawable"
+            app:kswThumbHeight="16dp"
+            app:kswThumbWidth="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:textSize="@dimen/gild_sub"
+            android:text="声音" />
+
+        <!--<android.support.v7.widget.SwitchCompat-->
+            <!--android:id="@+id/sc_sound"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textOn="@string/switchcompat_on"-->
+            <!--android:textOff="@string/switchcompat_off"-->
+            <!--android:checked="true"/>-->
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sc_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true"
+            app:kswBackDrawable="@drawable/flyme_back_drawable"
+            app:kswBackMeasureRatio="2.2"
+            app:kswThumbDrawable="@drawable/flyme_thumb_drawable"
+            app:kswThumbHeight="16dp"
+            app:kswThumbWidth="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:textSize="@dimen/gild_sub"
+            android:text="震动" />
+
+        <!--<android.support.v7.widget.SwitchCompat-->
+            <!--android:id="@+id/sc_vibrate"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textOn="@string/switchcompat_on"-->
+            <!--android:textOff="@string/switchcompat_off"-->
+            <!--android:checked="true"/>-->
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sc_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true"
+            app:kswBackDrawable="@drawable/flyme_back_drawable"
+            app:kswBackMeasureRatio="2.2"
+            app:kswThumbDrawable="@drawable/flyme_thumb_drawable"
+            app:kswThumbHeight="16dp"
+            app:kswThumbWidth="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackLine" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:textSize="@dimen/subTitle"
+            android:textColor="@color/grayText"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="取消"/>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/blackLine" />
+
+        <TextView
+            android:id="@+id/submit"
+            android:textSize="@dimen/subTitle"
+            android:layout_width="80dp"
+            android:layout_marginLeft="25dp"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/appBaseColor"
+            android:text="确定" />
+
+    </LinearLayout>
+
+</LinearLayout>

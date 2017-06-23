@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.cetnaline.findproperty.widgets.tablayout.CommonTabLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        app:tl_iconVisible="false"
+        app:tl_textBold="SELECT"
+        app:tl_iconGravity="RIGHT"
+        app:tl_indicator_color="@color/appBaseColor"
+        app:tl_textSelectColor="@color/appBaseColor"
+        app:tl_indicator_width="80dp"
+        app:tl_textUnselectColor="@color/title_color_light"
+        app:tl_textsize="14sp"/>
+
+    <View style="@style/horizontalBigLine"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/data_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/no_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_result" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无消息记录"
+                android:textColor="@color/etHintColor"
+                android:textSize="@dimen/textSmall"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+        <!--<com.cetnaline.findproperty.widgets.LoadingLayout-->
+            <!--android:id="@+id/loading_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+    </FrameLayout>
+</LinearLayout>

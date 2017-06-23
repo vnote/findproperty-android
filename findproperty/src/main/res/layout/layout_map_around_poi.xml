@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_around_info_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:ignore="all">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/atv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:maxEms="15"
+        android:gravity="center"
+        android:maxLines="4"
+        android:textSize="14sp"
+        tools:text="" />
+
+</LinearLayout>

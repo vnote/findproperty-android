@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cetnaline.findproperty.widgets.ObservableScrollView
+        android:id="@+id/home_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:paddingBottom="@dimen/marginTabBottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="628px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_home_bg"/>
+
+                <RelativeLayout
+                    android:id="@+id/home_search_view"
+                    android:layout_width="680px"
+                    android:layout_height="90px"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="20px"
+                    android:background="@drawable/home_search_bg"
+                    android:elevation="20px"
+                    android:shadowColor="@color/black">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="6dp"
+                        app:srcCompat="@drawable/ic_search_gray"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:text="小区 / 学校 / 地铁 / 板块名称"
+                        android:textColor="#ccc"/>
+
+                    <ImageView
+                        android:id="@+id/home_iv_scan"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="6dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/ic_scan_24dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/home_search_bg"
+                    android:drawableLeft="@drawable/ic_search_gray"
+                    android:drawablePadding="10dp"
+                    android:elevation="20px"
+                    android:gravity="left|center_vertical"
+                    android:padding="10dp"
+                    android:shadowColor="@color/black"
+                    android:text="小区/学校/地铁/区域"
+                    android:textColor="@color/etHintColor"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/home_to_second"
+                    style="@style/homeTextStyle"
+                    android:drawableTop="@drawable/ic_second"
+                    android:text="二手房"/>
+
+                <TextView
+                    android:id="@+id/home_to_rent"
+                    style="@style/homeTextStyle"
+                    android:drawableTop="@drawable/ic_rent"
+                    android:text="租房"/>
+
+
+                <TextView
+                    android:id="@+id/home_to_new"
+                    style="@style/homeTextStyle"
+                    android:drawableTop="@drawable/ic_entrust"
+                    android:text="委托"/>
+
+                <TextView
+                    android:id="@+id/home_to_shop"
+                    style="@style/homeTextStyle"
+                    android:drawableTop="@drawable/ic_store"
+                    android:text="门店"/>
+
+            </LinearLayout>
+
+            <View style="@style/horizontalBigLine"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/home_tip_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="为您推荐"
+                    android:textSize="@dimen/subTitle"/>
+
+                <TextView
+                    android:id="@+id/home_to_intent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+                    android:gravity="center_vertical"
+                    android:text="填写找房意向"
+                    android:textColor="@color/textRed"/>
+
+                <TextView
+                    android:id="@+id/home_intent_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/home_to_intent"
+                    android:text="获得更精确的推荐？"
+                    android:textColor="@color/etHintColor"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/home_intent_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/etHintColor"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/home_intent_line"
+                style="@style/horizontalGrayLine"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/no_intent_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginLeft"
+                android:text="暂无符合意向房源，为您推荐..."
+                android:textColor="#d49115"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/home_house_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/home_list_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_home_tips"
+                android:drawablePadding="10dp"
+                android:text="关心你的每一平米"
+                android:textColor="@color/black_medium"
+                android:textSize="@dimen/text_body"/>
+
+            <TextView
+                android:id="@+id/home_look_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+                android:gravity="center"
+                android:text="点击查看更多"/>
+
+
+        </LinearLayout>
+
+
+    </com.cetnaline.findproperty.widgets.ObservableScrollView>
+
+    <View
+        android:id="@+id/home_title_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_padding_top"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <com.cetnaline.findproperty.widgets.AnimationLayout
+        android:id="@+id/home_search_view1"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/toolbar_padding_top"
+        android:background="@android:color/transparent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/home_search_bg_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="6px"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6px">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="6dp"
+                app:srcCompat="@drawable/ic_search_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小区 / 学校 / 地铁 / 板块名称"
+                android:textColor="#ccc"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/home_iv_scan1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/ic_scan_24dp"/>
+
+        <View
+            android:id="@+id/home_v_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eee"/>
+
+    </com.cetnaline.findproperty.widgets.AnimationLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/active_btn"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="-30dp"
+        app:srcCompat="@drawable/ic_active"
+        android:layout_width="65dp"
+        android:layout_height="65dp" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/blackLine" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_entrust_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/my_entrust_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_entrust_no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:textColor="@color/etHintColor"
+            android:text="暂无委托记录"/>
+
+        <Button
+            android:id="@+id/my_entrust_go"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="94px"
+            android:text="立即委托"
+            android:textColor="@color/btRed"
+            android:background="@drawable/bt_line_red"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

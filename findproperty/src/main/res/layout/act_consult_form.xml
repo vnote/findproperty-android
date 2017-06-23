@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View style="@style/horizontalBigLine"
+                android:layout_marginBottom="@dimen/marginLeft"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:textColor="@color/black_dark"
+                    android:textSize="@dimen/subTitle"
+                    android:text="联系人"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/marginLeft"
+                    android:paddingRight="@dimen/marginRight"
+                    android:id="@+id/user_name"
+                    android:background="@color/white"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/text_body"
+                    android:hint="请填写您的称呼" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grayBigLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:textColor="@color/black_dark"
+                    android:textSize="@dimen/subTitle"
+                    android:text="手机号" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+                    android:paddingLeft="@dimen/marginLeft"
+                    android:paddingRight="@dimen/marginRight"
+                    android:maxLines="1"
+                    android:id="@+id/user_phone"
+                    android:background="@color/white"
+                    android:textSize="@dimen/text_body"
+                    android:hint="请填写您的联系方式" />
+            </LinearLayout>
+
+            <View style="@style/horizontalBigLine"
+                android:layout_marginBottom="@dimen/marginLeft"/>
+
+            <LinearLayout
+                android:id="@+id/scope_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请选择政策或房源所属区域"
+                    android:textColor="@color/black_dark"
+                    android:textSize="@dimen/subTitle"
+                    android:layout_marginBottom="15dp" />
+
+                <com.cetnaline.findproperty.widgets.SingleSelectGridView
+                    android:id="@+id/scope_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:horizontalSpacing="12dp">
+
+                </com.cetnaline.findproperty.widgets.SingleSelectGridView>
+
+                <View style="@style/horizontalBigLine"
+                    android:layout_marginBottom="@dimen/marginLeft"/>
+
+            </LinearLayout>
+
+            <com.cetnaline.findproperty.widgets.RemarkEditTextLayout
+                android:id="@+id/remark"
+                app:content_hint="请输入您想咨询的内容..."
+                app:max_length="140"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="立即咨询"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:background="@color/appBaseColor"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+

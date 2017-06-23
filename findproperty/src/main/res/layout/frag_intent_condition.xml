@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/intent_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="您想买的房价范围"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title"/>
+
+    <ImageView
+        android:id="@+id/condition_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intent_tv_title"
+        android:src="@drawable/ic_intent_price_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/intent_rl_wheel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/intent_bg_next"
+        android:layout_marginBottom="40dp">
+
+        <com.cetnaline.findproperty.widgets.HorizontalWheel
+            android:id="@+id/intent_condition_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/horizontal_wheel_bg">
+
+        </com.cetnaline.findproperty.widgets.HorizontalWheel>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#FFFFFF"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/intent_bg_next"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bt_line_white"
+        android:text="下一步"
+        android:textColor="@color/white"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/condition_rv_region"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/intent_bg_next"
+        android:layout_below="@id/intent_tv_title"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

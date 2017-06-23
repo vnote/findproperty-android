@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/menu_pop_bg">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:orientation="vertical"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_height="145dp">
+
+
+            <TextView
+                android:id="@+id/menu1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/menu_search_jinjiren_sel"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/text_body"
+                android:textColor="@color/white"
+                android:text="查找顾问" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_line" />
+
+            <TextView
+                android:id="@+id/menu2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/menu_search_nearby_sel"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/text_body"
+                android:textColor="@color/white"
+                android:text="附近顾问" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_line" />
+
+            <TextView
+                android:id="@+id/menu3"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/ic_staff_store_sel"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_body"
+                android:text="查找门店" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

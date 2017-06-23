@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_marginTop="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="@color/appBaseColor" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/appBaseColor"
+        android:textSize="@dimen/textSmall"
+        android:layout_marginBottom="14.7dp"
+        android:text="升级中..." />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="2.6dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:progressDrawable="@drawable/process_bg"
+        android:max="100"
+        android:layout_marginBottom="16.1dp"
+        android:id="@+id/process" />
+
+</LinearLayout>

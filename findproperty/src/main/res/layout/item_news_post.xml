@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_table_selector"
+    android:padding="10dp"
+    tools:ignore="all">
+
+    <ImageView
+        android:id="@+id/img_news_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_news_point" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/atv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_dark"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        tools:text="中环一号" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/atv_tag_fir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/atv_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black_dark"
+        android:textSize="12sp"
+        tools:text="3室2厅 138平米 南北" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/atv_tag_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atv_tag_fir"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black_dark"
+        android:textSize="12sp"
+        tools:text="09-11日更新" />
+
+    <LinearLayout
+        android:id="@+id/ll_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:text="510万" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_price_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/list_hint_color"
+                android:textSize="15sp"
+                tools:text="510万" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_price_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_news_arrow_up"
+                android:gravity="bottom"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp"
+                tools:text="上涨10万" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_price_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_news_arrow_down"
+                android:gravity="bottom"
+                android:textColor="#3A9A5E"
+                android:textSize="13sp"
+                tools:text="下跌10万" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/atv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="#F89E9E"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="gone"
+        tools:text="已售" />
+</RelativeLayout>

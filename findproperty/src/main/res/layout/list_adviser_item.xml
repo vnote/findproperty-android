@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical">
+    <com.cetnaline.findproperty.widgets.CircleImageView
+        android:id="@+id/adviser_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/adviser_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:textSize="@dimen/subTitle"/>
+        <TextView
+            android:id="@+id/adviser_content"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="@dimen/text_body"
+            android:textColor="@color/grayText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical">
+
+        <ImageView
+            android:id="@+id/adviser_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_store_phone"/>
+
+        <ImageView
+            android:id="@+id/adviser_connect"
+            android:layout_marginRight="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_chat"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

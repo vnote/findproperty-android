@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/agent_info_layout"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="@dimen/marginLeft"
+    android:layout_marginRight="@dimen/marginRight"
+    android:layout_marginTop="3dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.cetnaline.findproperty.widgets.CircleImageView
+        android:id="@+id/entrust_item_head"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/rc_default_portrait"/>
+
+    <TextView
+        android:id="@+id/entrust_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/grayText"
+        android:textSize="@dimen/text_body"/>
+
+    <TextView
+        android:id="@+id/entrust_item_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLength="20"
+        android:textColor="@color/grayText"
+        android:textSize="@dimen/text_body"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/entrust_item_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_phone"/>
+
+    <ImageButton
+        android:id="@+id/entrust_item_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_chat"/>
+
+</LinearLayout>

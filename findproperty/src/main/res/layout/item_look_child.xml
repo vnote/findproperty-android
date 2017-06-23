@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_house_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="10dp">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/item_small_img"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test_pic"/>
+
+        <View
+            android:id="@+id/off_view_bg"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@color/imageOffBg"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/off_view_text"
+            style="@style/offLineText"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_small_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="11号线白硬度温热特而无法答复收费服务而额如风是否是否访问地方"
+            android:textSize="@dimen/subTitle"/>
+
+        <View
+            style="@style/ShortLineStyle"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/item_small_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1室1厅|54m|南"/>
+
+            <com.cetnaline.findproperty.widgets.MyText
+                android:id="@+id/item_small_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:leftTextColor="@color/textRed"
+                app:leftTextSize="@dimen/subTitle"
+                app:rightText="万"
+                app:rightTextColor="@color/textRed"
+                app:rightTextSize="@dimen/textSmall"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="15dp"
+            style="@style/horizontalBlackLine"
+            android:background="@color/etHintColor"
+            android:layout_marginBottom="6dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

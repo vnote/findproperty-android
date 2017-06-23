@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_nearby"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/toolbar_padding_top"
+        android:adjustViewBounds="true"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Light">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/nearby_fb_nav"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/nav_round_bg"
+        android:drawableTop="@drawable/ic_map_nav_selector"
+        android:text="导航"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/nearby_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/nearby_rb_bus"
+            style="@style/radioButtonStyle"
+            android:drawableTop="@drawable/ic_bus"
+            android:text="公交"/>
+
+        <RadioButton
+            android:id="@+id/nearby_rb_metro"
+            style="@style/radioButtonStyle"
+            android:drawableTop="@drawable/ic_metro"
+            android:text="地铁"/>
+
+        <RadioButton
+            android:id="@+id/nearby_rb_school"
+            style="@style/radioButtonStyle"
+            android:drawableTop="@drawable/ic_school_nearby"
+            android:text="学校"/>
+
+        <RadioButton
+            android:id="@+id/nearby_rb_house"
+            style="@style/radioButtonStyle"
+            android:drawableTop="@drawable/ic_building"
+            android:text="楼盘"/>
+
+        <RadioButton
+            android:id="@+id/nearby_rb_hospital"
+            style="@style/radioButtonStyle"
+            android:drawableTop="@drawable/ic_hospital"
+            android:text="医院"/>
+
+        <RadioButton
+            android:id="@+id/nearby_rb_bank"
+            style="@style/radioButtonStyle"
+            android:drawableTop="@drawable/ic_bank"
+            android:text="银行"/>
+
+        <RadioButton
+            android:id="@+id/nearby_rb_restaurant"
+            style="@style/radioButtonStyle"
+            android:drawableTop="@drawable/ic_restaurant"
+            android:text="餐馆"/>
+
+    </RadioGroup>
+
+</FrameLayout>

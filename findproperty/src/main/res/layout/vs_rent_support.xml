@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/subTitle"
+        android:layout_gravity="center_horizontal"
+        android:text="配套设施"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:stretchColumns="0, 1">
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_0"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_0"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_1"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_1"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_2"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_2"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_3"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_3"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_4"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_4"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_5"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_5"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_6"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_6"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_7"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_7"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_8"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_8"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_9"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_9"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_10"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_10"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_11"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_11"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_12"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_12"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_13"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_13"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/rowImageIcon"
+                    android:id="@+id/rent_ic_14"/>
+
+                <TextView
+                    android:id="@+id/rent_tr_14"
+                    style="@style/rowTextView"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

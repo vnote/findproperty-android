@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_navigation_shape"
+                tools:ignore="all">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/atv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        tools:text="小区:40210元/平 环比→0.3%\n大场：30000元/平 环比→0.3%\n上海：30000元/平 环比→0.3%"/>
+
+</RelativeLayout>

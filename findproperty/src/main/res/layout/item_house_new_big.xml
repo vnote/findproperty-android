@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/item_big_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/test_pic"/>
+
+        <TextView
+            android:id="@+id/item_big_title"
+            style="@style/houseListTitleStyle"
+            android:paddingRight="10dp"
+            android:text="11号线白硬度温热特而无法答复收费服务而额如风是否是否访问地方"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/item_big_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1室1厅|54m|南"/>
+
+        <TextView
+            android:id="@+id/item_big_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="250万"
+            android:textColor="#ff0000"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/item_big_keys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+</LinearLayout>

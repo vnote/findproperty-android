@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/advert_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="11dp"
+        android:background="@drawable/filled_gray_bg"
+        android:layout_marginTop="6dp"/>
+
+    <Button
+        android:id="@+id/advert_over"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/filled_white_bg"
+        android:layout_marginTop="7dp"
+        android:textSize="10sp"
+        android:text="跳过3"/>
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progress"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        app:cpb_background_progressbar_color="@android:color/transparent"
+        app:cpb_background_progressbar_width="4dp"
+        app:cpb_progressbar_color="@color/white"
+        app:cpb_progressbar_width="4dp" />
+
+</FrameLayout>
+
+
+

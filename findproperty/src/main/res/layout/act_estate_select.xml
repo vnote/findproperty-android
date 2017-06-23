@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_arrow_back_gray_24dp" />
+
+        <com.cetnaline.findproperty.widgets.ClearableEditText
+            android:id="@+id/search_edt"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:layout_toRightOf="@id/back_img"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_gray_background"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:drawableLeft="@drawable/ic_search_gray"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="请输入小区名称搜索"
+            android:textSize="@dimen/textSmall" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/search_btn"-->
+            <!--android:text="搜索"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+</LinearLayout>

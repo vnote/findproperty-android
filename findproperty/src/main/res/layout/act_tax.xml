@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.cetnaline.findproperty.widgets.tablayout.CommonTabLayout
+            android:id="@+id/tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            app:tl_iconVisible="false"
+            app:tl_textBold="SELECT"
+            app:tl_indicator_width="80dp"
+            app:tl_indicator_color="@color/appBaseColor"
+            app:tl_textSelectColor="@color/appBaseColor"
+            app:tl_textUnselectColor="@color/title_color_light"
+            app:tl_textsize="14sp"/>
+        <View style="@style/horizontalBigLine"
+            android:layout_marginBottom="@dimen/marginLeft"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/overView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:onClick="onClick"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <RelativeLayout style="@style/MineTaxRelativeLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_title1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_medium"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_des1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black_dark"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/MineTaxRelativeLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_title2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_medium"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_des2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black_dark"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/MineTaxRelativeLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_title3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_medium"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_des3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black_dark"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/MineTaxRelativeLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_title4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_medium"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_des4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black_dark"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/MineTaxRelativeLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_title5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_medium"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_des5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black_dark"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/MineTaxRelativeLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_title6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_medium"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_des6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black_dark"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/MineTaxRelativeLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_title7"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_medium"
+                android:textSize="14sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/atv_des7"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black_dark"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

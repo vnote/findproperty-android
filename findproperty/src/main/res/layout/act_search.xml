@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/toolbar_padding_top"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/marginLeft"
+        android:paddingRight="@dimen/marginLeft">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="@drawable/search_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="52px"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:id="@+id/search_ly_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/search_tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="二手房"
+                        android:layout_marginRight="4dp"
+                        android:textColor="#000"/>
+
+                    <ImageView
+                        android:id="@+id/search_iv_triangle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/triangle"/>
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_search_black"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/search_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@null"
+                    android:focusable="true"
+                    android:hint="小区/学校/地铁/板块名称"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:textColor="#333"
+                    android:textColorHint="#bbb"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/search_iv_delete"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/time_clear_normal"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/search_tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="取消"
+            android:textColor="#666"
+            android:textSize="@dimen/subTitle"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_lv_autocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp">
+
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:background="#FF0000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"
+                android:text="搜索历史"
+                android:textColor="#333"/>
+        </LinearLayout>
+
+        <com.cetnaline.findproperty.widgets.FlowTag
+            android:id="@+id/tag_cloud_view_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:layout_marginRight="@dimen/marginRight"
+            android:layout_marginTop="32px"/>
+
+        <TextView
+            android:id="@+id/btn_clean_history_keywords"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="54px"
+            android:background="@drawable/bt_search_clear_bg"
+            android:drawableLeft="@drawable/ic_delete"
+            android:drawablePadding="12px"
+            android:text="清除历史记录"
+            android:textColor="#666"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_search_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64px"
+        android:orientation="horizontal"
+        android:paddingLeft="22dp">
+
+        <ImageView
+            android:layout_width="3dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical"
+            android:background="#FF0000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="热门搜索"
+            android:textColor="#333"/>
+    </LinearLayout>
+
+    <com.cetnaline.findproperty.widgets.FlowTag
+        android:id="@+id/tag_cloud_view_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="32px"/>
+
+</LinearLayout>

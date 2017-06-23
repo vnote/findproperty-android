@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        style="@style/horizontalBigLine"/>
+
+    <EditText
+        android:id="@+id/look_work_user"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:textColorHint="@color/etHintColor"
+        android:background="@null"
+        android:padding="@dimen/marginLeft"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:hint="请填写您的称呼"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:background="#eee"/>
+
+    <TextView
+        android:id="@+id/look_work_phone"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="100px"
+        android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+        android:text="请填写您的联系方式"
+        android:padding="@dimen/marginLeft"
+        android:textColor="@color/etHintColor"/>
+
+    <View
+        style="@style/horizontalBigLine"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/subTitle"
+        android:text="请选择您的带看顾问"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/look_work_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/look_work_commit"
+        style="@style/redButton"
+        android:textSize="@dimen/subTitle"
+        android:text="提交"/>
+
+</LinearLayout>

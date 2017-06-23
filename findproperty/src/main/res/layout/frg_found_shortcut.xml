@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="业主委托"
+        android:textColor="@color/normalText"
+        android:textSize="@dimen/title"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="深耕上海十九年，专业顾问助您更快成交"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/subTitle"
+            android:layout_marginBottom="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/found_shortcut_bg1"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/publish_source"
+                android:drawableLeft="@drawable/ic_found_shortcut_1"
+                android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="发布房源"
+                android:textSize="@dimen/subTitle"
+                android:textColor="@color/normalText"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/entrust_home_my"
+                android:drawableLeft="@drawable/ic_found_shortcut_2"
+                android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="我的委托"
+                android:textSize="@dimen/subTitle"
+                android:textColor="@color/normalText"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/price_tool"
+                android:drawableLeft="@drawable/ic_found_shortcut_3"
+                android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="房屋估价"
+                android:textSize="@dimen/subTitle"
+                android:textColor="@color/normalText"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/entrust_home_sale"-->
+        <!--style="@style/entrustTextStyle"-->
+        <!--android:background="@drawable/ic_entrust_one"-->
+        <!--android:text="# 我要出售 #"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/entrust_home_lease"-->
+        <!--style="@style/entrustTextStyle"-->
+        <!--android:background="@drawable/ic_entrust_two"-->
+        <!--android:text="# 我要出租 #"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/entrust_home_my"-->
+        <!--style="@style/entrustTextStyle"-->
+        <!--android:background="@drawable/ic_entrust_three"-->
+        <!--android:text="# 我的委托 #"/>-->
+</LinearLayout>

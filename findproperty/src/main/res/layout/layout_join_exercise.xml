@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="活动报名"
+        android:textSize="@dimen/title"/>
+
+    <com.cetnaline.findproperty.widgets.ClearableEditText
+        android:id="@+id/exercise_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:hint="姓名"
+        android:inputType="textAutoComplete"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/edittext_cursor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.cetnaline.findproperty.widgets.ClearableEditText
+            android:id="@+id/exercise_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:hint="联系电话"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/edittext_cursor"/>
+
+
+        <TextView
+            android:id="@+id/exercise_send_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grayBg"
+            android:padding="6dp"
+            android:text="发送验证码"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <com.cetnaline.findproperty.widgets.ClearableEditText
+        android:id="@+id/exercise_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:hint="验证码"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/edittext_cursor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"/>
+
+        <Button
+            android:id="@+id/bt_commit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@color/btRed"
+            android:text="提交"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

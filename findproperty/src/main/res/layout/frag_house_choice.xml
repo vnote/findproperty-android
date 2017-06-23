@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/intent_tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="您正在寻找"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title"/>
+
+    <Button
+        android:id="@+id/intent_bg_next"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bt_line_white"
+        android:text="下一步"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_below="@id/intent_tv_text"
+        android:layout_above="@id/intent_bg_next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:src="@drawable/ic_intent_region_bg"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/choice_house_vp"
+        android:layout_width="600px"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/intent_tv_text"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:clipChildren="false">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</RelativeLayout>

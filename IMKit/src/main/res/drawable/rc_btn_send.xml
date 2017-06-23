@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@drawable/rc_btn_send_normal" android:state_focused="false" android:state_pressed="false" android:state_selected="false"/>-->
+    <!--<item android:drawable="@drawable/rc_btn_send_hover" android:state_pressed="false" android:state_selected="true"/>-->
+    <!--&lt;!&ndash; Focused states &ndash;&gt;-->
+    <!--<item android:drawable="@drawable/rc_btn_send_hover" android:state_focused="true" android:state_pressed="false" android:state_selected="false"/>-->
+    <!--&lt;!&ndash; Pressed &ndash;&gt;-->
+    <!--<item android:drawable="@drawable/rc_btn_send_hover" android:state_pressed="true"/>-->
+
+
+    <item android:state_focused="false" android:state_pressed="false" android:state_selected="false">
+        <shape>
+            <solid android:color="#fffb2727"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false" android:state_selected="true">
+        <shape>
+            <solid android:color="#66fb2727"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <!-- Focused states -->
+    <item android:state_focused="true" android:state_pressed="false" android:state_selected="false">
+        <shape>
+            <solid android:color="#fffb2727"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <!-- Pressed -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#66fb2727"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+</selector>

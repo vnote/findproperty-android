@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/guide_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/toolbar_padding_top"
+        android:textColor="@color/white"
+        android:drawableRight="@drawable/ic_right_arrow_white_sel"
+        android:gravity="center_vertical"
+        android:text="直接进入"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="110px"
+        android:visibility="invisible"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/guide_bt_owner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_guide_white"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:paddingBottom="20px"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20px"
+            android:text="委托卖房"
+            android:textSize="@dimen/subTitle"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/guide_bt_found"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bt_guide_white"
+            android:gravity="center"
+            android:paddingBottom="20px"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20px"
+            android:text="我要找房"
+            android:textSize="@dimen/subTitle"/>
+
+    </LinearLayout>
+
+
+    <com.cetnaline.findproperty.widgets.IndicatorView
+        android:id="@+id/guide_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="98px"
+        app:indicator_icon="@drawable/indicator_selector"
+        app:indicator_margin="20dp"
+        app:indicator_smooth="true"/>
+</FrameLayout>

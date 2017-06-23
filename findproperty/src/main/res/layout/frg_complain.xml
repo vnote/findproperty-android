@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/basic_layout">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/gild_sub"
+                android:text="投诉对象" />
+
+            <TextView
+                android:id="@+id/object_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:textColor="@color/title_color"
+                android:text=""
+                android:textSize="@dimen/text_body"
+                android:gravity="center_vertical|right"
+                android:drawableRight="@drawable/ic_right_arrow_gray_sel" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grayLine"
+            android:layout_below="@+id/basic_layout" />
+
+        <LinearLayout
+            android:layout_below="@+id/line"
+            android:id="@+id/detail_layout"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/gild_sub"
+                android:text="投诉原因" />
+
+            <TextView
+                android:id="@+id/object_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_body"
+                android:textColor="@color/title_color"
+                android:text=""
+                android:gravity="center_vertical|right"
+                android:drawableRight="@drawable/ic_right_arrow_gray_sel" />
+
+        </LinearLayout>
+
+        <View style="@style/horizontalBigLine"
+            android:id="@+id/line1"
+            android:layout_below="@+id/detail_layout"
+            android:layout_marginBottom="@dimen/marginLeft"/>
+
+        <com.cetnaline.findproperty.widgets.RemarkEditTextLayout
+            android:id="@+id/remark"
+            app:content_hint="请填写投诉描述,以便为您核实与处理..."
+            app:max_length="140"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:background="@color/appBaseColor"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

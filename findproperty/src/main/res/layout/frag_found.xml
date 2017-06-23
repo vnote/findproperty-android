@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.cetnaline.findproperty.widgets.tablayout.SegmentTabLayout
+        android:id="@+id/found_tab_bar"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        app:tl_textsize="@dimen/text_body"
+        app:tl_bar_color="#ffffff"
+        app:tl_indicator_color="@color/appBaseColor"
+        app:tl_indicator_corner_radius="2dp"
+        app:tl_tab_padding="20dp"/>
+
+    <View
+        style="@style/horizontalGrayLine"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/marginTabBottom">
+
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

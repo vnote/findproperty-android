@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:ignore="all">
+
+    <LinearLayout
+        android:id="@+id/ll_drop_fir"
+        style="@style/DropDownLayout">
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/atv_drop_fir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/ic_drop_arrow"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="总价"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_drop_sec"
+        style="@style/DropDownLayout">
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/atv_drop_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/ic_drop_arrow"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="面积"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_drop_thi"
+        style="@style/DropDownLayout">
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/atv_drop_thi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/ic_drop_arrow"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="房型"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_drop_fou"
+        style="@style/DropDownLayout">
+
+        <android.support.v7.widget.AppCompatCheckedTextView
+            android:id="@+id/atv_drop_fou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/ic_drop_arrow"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="更多"/>
+
+    </LinearLayout>
+
+</LinearLayout>

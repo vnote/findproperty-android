@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/fl_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    android:orientation="vertical">
+
+    <View style="@style/horizontalBlackLine"/>
+
+    <ListView
+        android:background="#FFFFFF"
+        android:id="@+id/drop_lv_multi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@null"
+        android:layout_weight="1">
+
+
+    </ListView>
+
+    <View style="@style/horizontalBlackLine"/>
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/drop_bt_clear"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bt_line_red"
+            android:layout_weight="1"
+            android:textColor="@color/btRed"
+            android:text="清空"/>
+
+        <Button
+            android:id="@+id/drop_bt_ok"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bt_filled_red"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="确认"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/list_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.cetnaline.findproperty.widgets.dropdown.DropDownView
+            android:id="@+id/house_drop_menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/houst_list_switch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/marginRight"
+            android:button="@null"
+            android:drawableRight="@drawable/list_change"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/list_view_line"
+        android:layout_below="@id/list_menu"
+        style="@style/horizontalBigLine"/>
+
+    <LinearLayout
+        android:id="@+id/house_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/list_view_line"
+        android:background="@color/grayLine"
+        android:orientation="horizontal">
+
+        <com.cetnaline.findproperty.widgets.FlowTag
+            android:id="@+id/house_search_tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/house_search_save"
+            android:layout_width="103px"
+            android:layout_height="24dp"
+            android:background="@drawable/yixiang_white_bg"
+            android:textSize="@dimen/textSmall"
+            android:text="保存"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/house_search_view">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/house_list_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sort_bg"
+        android:gravity="center"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_sort"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="排序"
+        android:textColor="@color/white"
+        android:layout_margin="30dp"/>
+</RelativeLayout>

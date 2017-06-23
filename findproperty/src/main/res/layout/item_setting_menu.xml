@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="42dp">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:id="@+id/act_layout">
+
+        <TextView
+            android:id="@+id/item_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/item_arrow"
+            android:textColor="@color/list_hint_color"
+            android:layout_centerVertical="true"
+            android:textStyle="bold" />
+
+        <com.cetnaline.findproperty.widgets.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@+id/item_arrow"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_right_arrow_gray_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

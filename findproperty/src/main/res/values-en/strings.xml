@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">FindProperty</string>
+
+    <string name="item_more_loading">Loading&#8230;</string>
+    <string name="item_more_load_error">Loading Failed</string>
+
+    <!--setting activity-->
+    <string name="setting_current_language">English</string>
+    <string name="setting_language">Language</string>
+    <string name="setting_push">Push Setting</string>
+    <string name="setting_cache">Clear Cache</string>
+    <string name="setting_update">Check Update</string>
+    <string name="setting_suggest">Suggest</string>
+    <string name="setting_about_us">About Us</string>
+    <string name="setting_reword">Score For Us</string>
+
+    <!--minefragment-->
+    <string name="mine_say">,hello!</string>
+    <string name="mine_wait_1">Reserved</string>
+    <string name="mine_wait_2">Waite</string>
+    <string name="mine_wait_3">Record</string>
+    <string name="mine_label_1">Buyer</string>
+    <string name="mine_label_2">Seller</string>
+    <string name="mine_menu_1">Messages</string>
+    <string name="mine_menu_2">Subscriptions</string>
+    <string name="mine_menu_3">Collections</string>
+    <string name="mine_menu_4">Activities</string>
+    <string name="mine_menu_5">Loan Calculator</string>
+    <string name="mine_menu_6">Tax Calculator</string>
+    <string name="mine_menu_7">Aptitude Query</string>
+    <string name="mine_menu_8">Sell</string>
+    <string name="mine_menu_9">Rent</string>
+    <string name="mine_menu_10">Depute</string>
+
+    <!--mainactivity-->
+    <string name="main_bottom_1">Benefit</string>
+    <string name="main_bottom_2">Depute</string>
+    <string name="main_bottom_3">Find House</string>
+    <string name="main_bottom_4">Chat</string>
+    <string name="main_bottom_5">Mine</string>
+
+    <!--loginactivity-->
+    <string name="login_default_name">Dear User</string>
+
+
+    <!--mapfragment-->
+    <string name="map_float_btn">Open List</string>
+    <string name="map_query_1_1">Second-Hand House</string>
+    <string name="map_query_1_2">Rent</string>
+    <string name="map_query_1_3">New House</string>
+    <string name="map_query_1_4">Village</string>
+    <string name="map_query_no_requirement">Clear</string>
+    <string name="map_query_house_type">House Type</string>
+    <string name="map_query_house_floor">House Floor</string>
+    <string name="map_query_house_area">Area</string>
+    <string name="map_query_house_direction">Direction</string>
+    <string name="map_query_house_age">House Age</string>
+    <string name="map_query_house_fitment">Fitment</string>
+    <string name="map_query_house_feature">Feature</string>
+    <string name="map_query_house_property">Property Type</string>
+    <string name="map_query_house_start">Sell Date</string>
+
+
+    <!--alert messages-->
+    <string name="map_draw_alert">Drawing Mode</string>
+    <string name="map_query_alert_1">This scope has </string>
+    <string name="map_query_alert_2"> properties</string>
+    <string name="map_query_alert_3">Houses</string>
+
+    <!--adviserdetailactivity-->
+    <string name="adviserdetail_say">\'s store</string>
+    <string name="adviserdetail_tab_1">Second-Hand House</string>
+    <string name="adviserdetail_tab_2">Rent House</string>
+    <string name="adviserdetail_label_1">Server Scope:</string>
+    <string name="adviserdetail_label_2">Call</string>
+    <string name="adviserdetail_no_requirement">Clear</string>
+    <string name="adviserdetail_nearby">Nearby</string>
+    <string name="adviserdetail_no_result">Result is Null</string>
+    <string name="adviserdetail_msg">Try to change search condition query</string>
+
+    <string name="adviserlist_no_more">No More Data</string>
+
+    <!--toolactivity-->
+    <string name="tool_tab_bar_1">Commercial loan</string>
+    <string name="tool_tab_bar_2">Housing fund Loan</string>
+    <string name="tool_tab_bar_3">Combined Loan</string>
+
+    <!--conversationlistfragment-->
+    <string name="conversationlist_btn">DELETE</string>
+
+    <!--tools activities-->
+    <string name="calc_type">Calc Type</string>
+    <string name="calc_loan_total">Loan Total</string>
+    <string name="calc_mortgage_ratio">Mortgage Percent</string>
+    <string name="calc_house_total">House Price</string>
+    <string name="calc_wan_yuan">WangYuan</string>
+    <string name="calc_unit_year">Year</string>
+    <string name="calc_down_payment">Down Payment</string>
+    <string name="calc_loan_period">Loan Period</string>
+    <string name="calc_loan_type">Loan Type</string>
+    <string name="calc_loan_rate">Loan Rate</string>
+    <string name="calc_loan_rate_comb">Loan Rate Comb</string>
+    <string name="calc_average_interest">Average Interest</string>
+    <string name="calc_first">First Buy</string>
+    <string name="calc_equals">=</string>
+    <string name="calc_multiply">×</string>
+    <string name="calc_interest_times">Times</string>
+    <string name="calc_percent">%</string>
+    <string name="calc_yes">Yes</string>
+    <string name="calc_house_type">House Type</string>
+    <string name="calc_house_area">House Area</string>
+    <string name="calc_house_original">House Original</string>
+    <string name="calc_ping">Ping</string>
+    <string name="calc_average_house">Average House</string>
+    <string name="calc_house_unit_price">Unit Price</string>
+    <string name="calc_yuan_ping">￥/Ping</string>
+    <string name="calc_levy_type">Levy Type</string>
+    <string name="calc_buy_years">Buy Years</string>
+    <string name="calc_buy_five_year">Over 5 Year</string>
+    <string name="calc_buyer_first">Buyer First</string>
+    <string name="calc_seller_only">Seller Only</string>
+    <string name="btn_start_calc">Start Calculation</string>
+    <string name="calc_fund">Found</string>
+    <string name="calc_business_loan">Business Loan</string>
+
+    <!--tax activity-->
+    <string name="price_total">Price Totals</string>
+
+    <!--reservation-->
+
+    <!--news activity-->
+
+    <!--collection activity-->
+    <string name="collection_message">No Collection</string>
+
+    <!--userinfo setting-->
+
+    <!--subscribe activity-->
+
+    <!--common button text-->
+</resources>

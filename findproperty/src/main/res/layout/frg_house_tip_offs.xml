@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/basic_layout">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/gild_sub"
+                android:text="所在小区" />
+
+            <TextView
+                android:id="@+id/object_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:textColor="@color/title_color"
+                android:text=""
+                android:textSize="@dimen/text_body"
+                android:gravity="center_vertical|right"
+                android:drawableRight="@drawable/ic_right_arrow_gray_sel" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grayLine"
+            android:layout_below="@+id/basic_layout" />
+
+        <LinearLayout
+            android:layout_below="@+id/line"
+            android:id="@+id/detail_layout"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/gild_sub"
+                android:text="举报原因" />
+
+            <TextView
+                android:id="@+id/object_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_body"
+                android:textColor="@color/title_color"
+                android:text=""
+                android:gravity="center_vertical|right"
+                android:drawableRight="@drawable/ic_right_arrow_gray_sel" />
+
+        </LinearLayout>
+
+        <View style="@style/horizontalBigLine"
+            android:id="@+id/line1"
+            android:layout_below="@+id/detail_layout"
+            android:layout_marginBottom="@dimen/marginLeft"/>
+
+        <com.cetnaline.findproperty.widgets.RemarkEditTextLayout
+            android:id="@+id/remark"
+            app:content_hint="请输入举报内容..."
+            app:max_length="140"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!--<EditText-->
+            <!--android:id="@+id/detail"-->
+            <!--android:layout_below="@+id/line1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="120dp"-->
+            <!--android:lines="10"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingTop="2dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingBottom="2dp"-->
+            <!--android:gravity="top"-->
+            <!--android:background="@color/white"-->
+            <!--android:maxLength="140"-->
+            <!--android:textSize="@dimen/subTitle"-->
+            <!--android:textColorHint="@color/list_hint_color"-->
+            <!--android:hint="请输入举报内容..." />-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:gravity="right"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+                <!--android:id="@+id/lest_number"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/list_hint_color"-->
+                <!--android:text="0" />-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/list_hint_color"-->
+                <!--android:text="/140字" />-->
+        <!--</LinearLayout>-->
+        <!--<View-->
+            <!--android:layout_below="@+id/detail"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="@color/grayLine" />-->
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:background="@color/appBaseColor"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

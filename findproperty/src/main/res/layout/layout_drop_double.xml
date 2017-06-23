@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    android:paddingBottom="150dp"
+    tools:ignore="all">
+
+    <ListView
+        android:id="@+id/lv_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:layout_widthPercent="50%" />
+
+    <ListView
+        android:id="@+id/lv_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white"
+        android:divider="@null"
+        app:layout_widthPercent="50%" />
+
+</android.support.percent.PercentRelativeLayout>

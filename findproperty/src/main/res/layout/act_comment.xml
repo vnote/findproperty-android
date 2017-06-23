@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cetnaline.findproperty.widgets.tablayout.CommonTabLayout
+            android:id="@+id/tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            app:tl_iconVisible="false"
+            app:tl_textBold="SELECT"
+            app:tl_indicator_color="@color/appBaseColor"
+            app:tl_textSelectColor="@color/appBaseColor"
+            app:tl_indicator_width="60dp"
+            app:tl_textUnselectColor="@color/title_color_light"
+            app:tl_textsize="14sp"/>
+        <View style="@style/horizontalBigLine"
+            android:layout_marginBottom="@dimen/marginLeft"/>
+
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/frame_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"></FrameLayout>-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/success_layout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/success_submit"
+                android:layout_marginTop="70dp" />
+
+            <TextView
+                android:id="@+id/alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交成功"
+                android:layout_marginTop="27dp"
+                android:textColor="@color/black_dark"
+                android:textSize="@dimen/gild_title"
+                />
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="我们已收到您的建议，感谢您的信任与支持！"
+                android:textSize="@dimen/textSmall"
+                android:textColor="@color/etHintColor" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="确定"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/gild_sub"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/appBaseColor" />
+    </RelativeLayout>
+
+
+</FrameLayout>
+

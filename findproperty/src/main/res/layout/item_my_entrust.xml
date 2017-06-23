@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/entrust_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/subTitle"
+            android:maxLength="12"
+            android:textColor="@color/black_dark"/>
+
+        <TextView
+            android:id="@+id/entrust_item_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="出售"
+            android:layout_toRightOf="@id/entrust_item_name"
+            android:background="@drawable/text_line_bg"
+            android:textColor="@color/tagLine"
+            android:textSize="@dimen/textSmall"/>
+
+        <TextView
+            android:id="@+id/entrust_bt_cancel"
+            android:gravity="center"
+            android:textSize="@dimen/textSmall"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/etHintColor"
+            android:text="取消委托"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/subscribe_btn"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/status_label"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="@dimen/textSmall"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/tagLine"
+            android:text="取消委托"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontalBlackLine"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/entrust_item_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:textColor="@color/grayText"
+        android:textSize="@dimen/text_body"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/room_type"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_body"
+            android:text="2室1厅1卫"/>
+
+        <TextView
+            android:id="@+id/area"
+            android:text="50㎡"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/entrust_item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/text_body"
+            android:text="期望售价:"/>
+
+        <TextView
+            android:id="@+id/entrust_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_body"
+            android:textColor="@color/appBaseColor"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalBlackLine"
+        android:layout_marginTop="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/bottom_layout"
+        android:background="@drawable/bottom_line_bg"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/default_tv"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="房源审核中..."
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            android:textColor="@color/normalText" />
+
+        <include
+            layout="@layout/item_staff_action"/>
+    </FrameLayout>
+</LinearLayout>

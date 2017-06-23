@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/item_sub_line"
+    android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="小区名称"
+        android:maxLines="1"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/normalText"
+        android:textSize="@dimen/subTitle"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="0dp"
+                android:layout_weight="11"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="请选择房源所在小区"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/normalText"
+                android:textSize="@dimen/subTitle"
+                android:imeOptions="actionDone"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="0.5dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/content_ext"
+                android:layout_marginLeft="15dp"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/subTitle"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_margin="5dp"
+                android:text="平方米"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/right_img"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_right_arrow_gray_sel" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/touch_view"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

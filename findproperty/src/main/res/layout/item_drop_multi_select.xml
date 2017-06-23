@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_vertical_line_red"
+        android:drawablePadding="6dp"
+        android:text="朝向"
+        android:textSize="16sp"/>
+
+    <View style="@style/horizontalBlackLine"/>
+
+    <com.cetnaline.findproperty.widgets.FlowTag
+        android:id="@+id/item_my_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </com.cetnaline.findproperty.widgets.FlowTag>
+
+</LinearLayout>

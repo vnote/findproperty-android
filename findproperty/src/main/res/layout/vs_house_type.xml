@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/house_price_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/subTitle"
+            android:text="租金"/>
+
+        <com.cetnaline.findproperty.widgets.MyText
+            android:id="@+id/house_mt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:leftTextColor="@color/textRed"
+            app:leftTextSize="@dimen/title"
+            app:rightText="元/月"
+            app:rightTextColor="@color/textRed"
+            app:rightTextSize="@dimen/subTitle"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="@color/blackLine"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/subTitle"
+            android:text="户型"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.cetnaline.findproperty.widgets.MyText
+                android:id="@+id/house_mt_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:leftTextColor="@color/textRed"
+                app:leftTextSize="@dimen/title"
+                app:rightText="室"
+                app:rightTextColor="@color/textRed"
+                app:rightTextSize="@dimen/subTitle"/>
+
+            <com.cetnaline.findproperty.widgets.MyText
+                android:id="@+id/house_mt_hall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:leftTextColor="@color/textRed"
+                app:leftTextSize="@dimen/title"
+                app:rightText="厅"
+                app:rightTextColor="@color/textRed"
+                app:rightTextSize="@dimen/subTitle"/>
+
+            <com.cetnaline.findproperty.widgets.MyText
+                android:id="@+id/house_mt_toilet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:leftTextColor="@color/textRed"
+                app:leftTextSize="@dimen/title"
+                app:rightText="卫"
+                app:rightTextColor="@color/textRed"
+                app:rightTextSize="@dimen/subTitle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="@color/blackLine"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/subTitle"
+            android:text="面积"/>
+
+        <com.cetnaline.findproperty.widgets.MyText
+            android:id="@+id/house_mt_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:leftTextColor="@color/textRed"
+            app:leftTextSize="@dimen/title"
+            app:rightText="㎡"
+            app:rightTextColor="@color/textRed"
+            app:rightTextSize="@dimen/subTitle"/>
+
+    </LinearLayout>
+</LinearLayout>

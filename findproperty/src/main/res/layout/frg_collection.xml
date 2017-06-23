@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/data_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"/>
+
+    <LinearLayout
+        android:id="@+id/no_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_collection" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/etHintColor"
+            android:textSize="@dimen/textSmall"
+            android:text="@string/collection_message"
+            />
+    </LinearLayout>
+
+    <!--<com.cetnaline.findproperty.widgets.LoadingLayout-->
+        <!--android:id="@+id/loading_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+</FrameLayout>

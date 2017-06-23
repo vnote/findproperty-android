@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <ImageView
+                android:id="@+id/item_big_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/test_pic"/>
+
+            <TextView
+                android:id="@+id/item_big_title"
+                style="@style/houseListTitleStyle"
+                android:layout_marginBottom="30dp"
+                android:paddingRight="70dp"/>
+
+
+            <com.cetnaline.findproperty.widgets.fullList.NestFullListView
+                android:id="@+id/item_big_keys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"/>
+
+
+            <com.cetnaline.findproperty.widgets.CircleImageView
+                android:id="@+id/item_big_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="10dp"
+                app:border_color="@color/white"
+                app:border_width="4dp"
+                app:srcCompat="@drawable/default_head"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/item_big_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="bottom"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/item_big_fitment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/textSmall"/>
+
+            <com.cetnaline.findproperty.widgets.MyText
+                android:id="@+id/item_big_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:leftTextColor="@color/textRed"
+                app:leftTextSize="@dimen/subTitle"
+                app:rightText="元/月"
+                app:rightTextColor="@color/textRed"
+                app:rightTextSize="@dimen/textSmall"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+

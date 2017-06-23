@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <CheckBox
+        android:id="@+id/item_child_select"
+        android:layout_width="25dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:button="@drawable/cb_bt_selector"/>
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/item_child_img"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_default_est_estate"/>
+
+        <View
+            android:id="@+id/off_view_bg"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@color/imageOffBg"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/off_view_text"
+            style="@style/offLineText"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_child_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="@dimen/subTitle"
+            android:text="11号线白硬度温热特而无法答"/>
+
+        <View
+            style="@style/ShortLineStyle"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/item_child_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1室1厅|54m|南"/>
+
+            <com.cetnaline.findproperty.widgets.MyText
+                android:id="@+id/item_child_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:leftTextColor="@color/textRed"
+                app:leftTextSize="@dimen/subTitle"
+                app:rightText="万"
+                app:rightTextColor="@color/textRed"
+                app:rightTextSize="@dimen/textSmall"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontalBlackLine"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@+id/main_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cetnaline.findproperty.widgets.MainViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true">
+
+            <com.cetnaline.findproperty.widgets.tablayout.CommonTabLayout
+                android:id="@+id/bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                app:tl_textBold="SELECT"
+                app:tl_textSelectColor="@color/appBaseColor"
+                app:tl_indicator_bounce_enable="false"
+                app:tl_indicator_width="0dp"
+                app:tl_textUnselectColor="@color/mainTabNormal"
+                app:tl_textsize="@dimen/textMin"
+                android:layout_below="@+id/view" />
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eee"
+                android:id="@+id/view" />
+
+            <LinearLayout
+                android:layout_width="52dp"
+                android:layout_height="42dp"
+                android:background="@drawable/main_bottom_cir_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:id="@+id/map_img"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_map_location_normal" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_map_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ic_info_know"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_know"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="160dp"
+            android:src="@drawable/_ic_tips_five"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/_ic_tips_six"/>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_right_list"
+        android:layout_width="600px"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/toolbar_padding_top">
+
+        <ListView
+            android:id="@+id/main_lv_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:divider="@color/blackLine"
+            android:dividerHeight="1px">
+
+        </ListView>
+
+
+        <FrameLayout
+            android:id="@+id/child_list_layout"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                android:id="@+id/school_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="选择学校"
+                        android:gravity="center" />
+                    <com.camnter.easyrecyclerview.widget.EasyRecyclerView
+                        android:id="@+id/section_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <com.camnter.easyrecyclerviewsidebar.EasyRecyclerViewSidebar
+                    android:id="@+id/section_sidebar"
+                    android:layout_width="30dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center|end"/>
+
+                <RelativeLayout
+                    android:id="@+id/section_floating_rl"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/img_show_float_bg"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/section_floating_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#ff444444"
+                        android:textSize="23sp"
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/main_lv_child"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/blackLine"
+                android:dividerHeight="1px"
+                android:visibility="gone"/>
+
+            <com.cetnaline.findproperty.widgets.LoadingLayout
+                android:id="@+id/loading_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.cetnaline.findproperty.widgets.StepLayout
+        android:id="@+id/step_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="您想买在什么位置"
+        android:textSize="@dimen/title"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <View style="@style/horizontalBlackLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/main_lv_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="1">
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/main_lv_child"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"
+            android:layout_weight="3">
+        </ListView>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/intent_bt_commit"
+        style="@style/redButton"
+        android:layout_alignParentBottom="true"
+        android:text="完成"/>
+
+</LinearLayout>

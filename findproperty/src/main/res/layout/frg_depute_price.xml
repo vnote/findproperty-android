@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:text="委托类型"
+                    android:gravity="center"
+                    android:textColor="@color/normalText"
+                    android:textSize="@dimen/subTitle"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/normalText"
+                        android:textSize="@dimen/subTitle"
+                        android:text="出售"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/rent"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/normalText"
+                        android:textSize="@dimen/subTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="出租"/>
+                </RadioGroup>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grayLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <com.cetnaline.findproperty.widgets.FormItemLayout
+                android:id="@+id/room_price"
+                app:title="预期售价"
+                app:content_hint="请输入预期售价"
+                app:content_ext="万元"
+                app:show_ext="true"
+                app:input_length="6"
+                app:show_right_img="false"
+                app:input_type="integer"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/calculator_price_1"
+                    android:drawableLeft="@drawable/ic_calculator"
+                    android:visibility="gone"
+                    android:drawablePadding="6dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/appBaseColor"
+                    android:gravity="center"
+                    android:text="估价"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/advise_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <com.cetnaline.findproperty.widgets.FormItemLayout
+                    android:id="@+id/room_advise_price"
+                    app:title="房屋估价"
+                    app:content_hint="请输入房屋估价"
+                    app:show_right_img="false"
+                    app:input_enable="false"
+                    app:input_text_color="@color/appBaseColor"
+                    app:input_type="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/calculator_price"
+                    android:drawableLeft="@drawable/ic_calculator"
+                    android:drawablePadding="6dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/appBaseColor"
+                    android:gravity="center"
+                    android:text="估价"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/grayLine"/>
+
+            <LinearLayout
+                android:id="@+id/chart_layout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格趋势参考"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginTop="@dimen/marginLeft"
+                    android:textColor="@color/grayText"
+                    android:textSize="@dimen/textSmall" />
+
+                <com.cetnaline.findproperty.widgets.chart.SaleLineChart2
+                    android:id="@+id/price_chart"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/grayLine"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/list_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="同小区在售房源"
+                    android:layout_marginLeft="@dimen/marginLeft"
+                    android:layout_marginTop="@dimen/marginLeft"
+                    android:textColor="@color/grayText"
+                    android:textSize="@dimen/textSmall" />
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:background="@color/appBaseColor"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

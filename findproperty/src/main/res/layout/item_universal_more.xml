@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_tips"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/bottom_line_left"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="#eee"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/atv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/item_more_loading"
+        android:textColor="#cccccc"
+        android:textSize="@dimen/text_body"/>
+
+    <View
+        android:id="@+id/bottom_line_right"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="#eee"/>
+</LinearLayout>

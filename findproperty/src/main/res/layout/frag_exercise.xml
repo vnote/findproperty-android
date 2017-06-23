@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/exercise_iv_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/white"
+            android:padding="4dp"
+            android:elevation="6dp"
+            android:src="@drawable/test_pic"/>
+
+        <TextView
+            android:id="@+id/exercise_tv_title"
+            style="@style/houseListTitleStyle"
+            android:text="2343"/>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/exercise_tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/grayText"
+        android:text="招商美仑公馆不限购不限贷,据系统登记的活动开始时间，在活动期间显示报名入口"/>
+
+    <View
+        style="@style/horizontalBlackLine"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/exercise_tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_time"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:text="2016/05/23-06/30"/>
+
+    <TextView
+        android:id="@+id/exercise_tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_position"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:text="上海市浦东新区洲海路999号"/>
+
+    <View
+        style="@style/horizontalBlackLine"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余时间"/>
+
+            <TextView
+                android:id="@+id/exercise_end_time"
+                style="@style/textRed"
+                android:layout_marginTop="10px"
+                android:text="11天10小时20分"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/blackLine"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已报名"/>
+
+            <TextView
+                android:id="@+id/exercise_join_number"
+                style="@style/textRed"
+                android:layout_marginTop="10px"
+                android:text="22人"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalBlackLine"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"/>
+
+    <Button
+        android:id="@+id/exercise_to_join"
+        android:layout_marginTop="20dp"
+        style="@style/centerLineButton"
+        android:text="我要报名"/>
+
+</LinearLayout>

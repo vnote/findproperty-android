@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="20dp"
+                android:text="要求：1.身份证内容信息无遮挡\n            2.上传业主本人或委托人身份证"
+                android:textColor="#999"
+                android:textSize="@dimen/textSmall" />
+
+            <TextView
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:gravity="center"
+                android:text="证件图片仅用于房屋委托备案"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_up_1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp" />
+                
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:background="@drawable/upload_finish_bg"
+                    android:src="@drawable/photo_cover"/>
+
+                <LinearLayout
+                    android:id="@+id/img_up_layout_1"
+                    android:background="@drawable/photo_show_bg"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp">
+                    <ImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_photo_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#999"
+                        android:textSize="@dimen/textSmall"
+                        android:text="点击上传身份证正面" />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/progress_ly1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:background="#CCFFFFFF"
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp">
+
+                    <com.cetnaline.findproperty.widgets.RoundProgressBarWidthNumber
+                        android:id="@+id/progress1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:progress_text_color="#B28D4D"
+                        app:progress_text_visibility="visible"
+                        app:progress_unreached_color="#B28D4D"
+                        app:progress_reached_color="#DAC59D"
+                        android:progress="0" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_up_2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp" />
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:background="@drawable/upload_finish_bg"
+                    android:src="@drawable/photo_cover"/>
+
+                <LinearLayout
+                    android:id="@+id/img_up_layout_2"
+                    android:background="@drawable/photo_show_bg"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp">
+                    <ImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_photo_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#999"
+                        android:textSize="@dimen/textSmall"
+                        android:text="点击上传身份证反面" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/progress_ly2"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:background="#CCFFFFFF"
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp">
+
+                    <com.cetnaline.findproperty.widgets.RoundProgressBarWidthNumber
+                        android:id="@+id/progress2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:progress_text_color="#B28D4D"
+                        app:progress_text_visibility="visible"
+                        app:progress_unreached_color="#B28D4D"
+                        app:progress_reached_color="#DAC59D"
+                        android:progress="0" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginBottom="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_up_3"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp" />
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:background="@drawable/upload_finish_bg"
+                    android:src="@drawable/photo_cover"/>
+
+                <LinearLayout
+                    android:id="@+id/img_up_layout_3"
+                    android:background="@drawable/photo_show_bg"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp">
+                    <ImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_photo_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#999"
+                        android:textSize="@dimen/textSmall"
+                        android:text="点击上传房产证" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/progress_ly3"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="45dp"
+                    android:background="#CCFFFFFF"
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="250dp"
+                    android:layout_height="150dp">
+
+                    <com.cetnaline.findproperty.widgets.RoundProgressBarWidthNumber
+                        android:id="@+id/progress3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:progress_text_color="#B28D4D"
+                        app:progress_text_visibility="visible"
+                        app:progress_unreached_color="#B28D4D"
+                        app:progress_reached_color="#DAC59D"
+                        android:progress="0" />
+
+                </RelativeLayout>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="提交认证"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/gild_sub"
+        android:background="@color/appBaseColor"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

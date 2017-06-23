@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="window_background">#FFFFFF</color>
+
+    <color name="normalText">#333</color>
+
+    <color name="grayText">#666</color>
+
+    <color name="blackLine">#eee</color>
+
+    <color name="grayLine">#eee</color>
+
+    <color name="mainTabNormal">#333</color>
+    <color name="mainTabSelected">#fb2c2c</color>
+
+    <color name="blackFilledBg">#99000000</color>
+    <color name="shadeBg">#90000000</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="appBaseColor">#fffb2727</color>
+    <color name="disAppBaseColor">#33fb2727</color>
+
+    <color name="mapLevelBg">#88b9ca</color>
+    <color name="est_selected">#77ffffff</color>
+
+    <color name="black_dark">#333333</color>
+
+    <!--text color-->
+    <color name="list_hint_color">#aaaaaa</color>
+    <color name="list_search_color">#F1BE65</color>
+    <color name="title_color">#666666</color>
+    <color name="title_color_light">#aaaaaa</color>
+
+    <!--button color-->
+
+    <color name="bottom_text_red">#fb2727</color>
+
+    <color name="black_medium">#666666</color>
+    <color name="toast_bg">#99666666</color>
+
+    <color name="tagLine">#b28d4d</color>
+
+    <color name="grayBigLine">#eee</color>
+    <color name="systemMsgColor">#ddd</color>
+
+    <color name="grayBg">#949292</color>
+    <color name="processBg">#e9e9e9</color>
+
+    <color name="etHintColor">#999</color>
+
+    <color name="black">#000000</color>
+
+    <color name="textRed">#fb2727</color>
+
+    <color name="btRed">#fb2727</color>
+
+    <color name="tranGray">#99000000</color>
+
+    <!--阴影布局-->
+
+    <color name="imageOffBg">#50000000</color>
+
+    <color name="railWay">#f0858fe6</color>
+
+    <color name="estateColor">#89b9ca</color>
+
+    <color name="imageTagNormal">#aaa</color>
+
+</resources>

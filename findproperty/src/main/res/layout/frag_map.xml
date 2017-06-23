@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_house_mv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"/>
+
+    <com.cetnaline.findproperty.widgets.DrawView
+        android:id="@+id/map_dv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/map_ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="@dimen/toolbar_padding_top"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.cetnaline.findproperty.widgets.dropdown.DropDownView
+            android:id="@+id/map_drop_menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="40px"
+            android:background="@color/grayLine"/>
+
+        <ImageView
+            android:id="@+id/map_ib_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10px"
+            android:layout_marginLeft="10px"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_search_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/map_ll_tool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="150px"
+        android:background="@drawable/ic_map_icon_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/map_iv_hand"
+            style="@style/mapIconStyle"
+            app:srcCompat="@drawable/icon_map_hand"/>
+
+        <View
+            android:id="@+id/map_line_one"
+            style="@style/mapIconLine"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/map_iv_metro"
+            style="@style/mapIconStyle"
+            app:srcCompat="@drawable/icon_map_metro"/>
+
+        <View
+            android:id="@+id/map_line_two"
+            style="@style/mapIconLine"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/map_iv_school"
+            style="@style/mapIconStyle"
+            app:srcCompat="@drawable/icon_map_school"/>
+
+        <View
+            android:id="@+id/map_line_three"
+            style="@style/mapIconLine"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/map_iv_location"
+            style="@style/mapIconStyle"
+            app:srcCompat="@drawable/icon_map_location"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/map_tv_list"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="150px"
+        android:background="@drawable/black_filled_bg"
+        android:drawableLeft="@drawable/ic_map_list"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:text="@string/map_float_btn"
+        android:textColor="@android:color/white"/>
+
+    <com.cetnaline.findproperty.widgets.bottomwindow.ExpandablePager
+        android:id="@+id/map_ep_house"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="invisible"
+        app:animation_duration="200"
+        app:collapsed_height="280dp">
+
+    </com.cetnaline.findproperty.widgets.bottomwindow.ExpandablePager>
+
+
+
+</RelativeLayout>

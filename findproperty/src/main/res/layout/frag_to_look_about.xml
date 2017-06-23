@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        style="@style/horizontalBigLine"
+        android:layout_marginBottom="@dimen/marginLeft"/>
+
+    <com.cetnaline.findproperty.widgets.ExpandableListPageView
+        android:id="@+id/look_about_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp">
+    </com.cetnaline.findproperty.widgets.ExpandableListPageView>
+
+    <LinearLayout
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/guide_vp"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"/>
+
+        <com.cetnaline.findproperty.widgets.IndicatorView
+            android:id="@+id/guide_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:indicator_icon="@drawable/group_indicator_selector"
+            app:indicator_margin="20dp"
+            app:indicator_smooth="true"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/guide_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btn_custom_bg"
+            android:gravity="center"
+            android:paddingBottom="30px"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="30px"
+            android:text="去预约"
+            android:textColor="@color/white"
+            android:textSize="@dimen/subTitle"/>
+
+    </LinearLayout>
+
+</FrameLayout>

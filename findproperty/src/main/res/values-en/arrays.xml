@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mapSecond">
+        <item>House</item>
+        <item>Scope</item>
+        <item>Total</item>
+        <item>More</item>
+    </string-array>
+
+    <string-array name="mapRent">
+        <item>Rent</item>
+        <item>Scope</item>
+        <item>Rent Price</item>
+        <item>More</item>
+    </string-array>
+
+    <string-array name="mapNew">
+        <item>New House</item>
+        <item>Scope</item>
+        <item>Average Price</item>
+        <item>More</item>
+    </string-array>
+
+    <string-array name="listSecond">
+        <item>Total</item>
+        <item>Area</item>
+        <item>House Type</item>
+        <item>More</item>
+    </string-array>
+
+    <string-array name="listRent">
+        <item>Rent Price</item>
+        <item>Area</item>
+        <item>House Type</item>
+        <item>More</item>
+    </string-array>
+
+    <string-array name="listNew">
+        <item>Average Price</item>
+        <item>Property</item>
+        <item>House Type</item>
+        <item>More</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Cancel</item>
+    </string-array>
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.cetnaline.findproperty.widgets.tablayout.CommonTabLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        app:tl_iconVisible="false"
+        app:tl_indicator_color="@color/appBaseColor"
+        app:tl_indicator_width="60dp"
+        app:tl_textBold="SELECT"
+        app:tl_textSelectColor="@color/appBaseColor"
+        app:tl_textUnselectColor="@color/title_color_light"
+        app:tl_textsize="14sp"/>
+
+    <View style="@style/horizontalBigLine"
+        android:layout_marginBottom="@dimen/marginLeft"/>
+
+    <LinearLayout
+        style="@style/entrustLLStyle">
+
+        <TextView
+            style="@style/entrustLeftTitle"
+            android:text="联系人"/>
+
+        <EditText
+            android:id="@+id/entrust_tv_person"
+            style="@style/entrustRightText"
+            android:background="@null"
+            android:lines="1"
+            android:maxLength="10"
+            android:imeOptions="actionDone"
+            android:hint="请输入您的称呼(选填)"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalBlackLine"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        style="@style/entrustLLStyle">
+
+        <TextView
+            style="@style/entrustLeftTitle"
+            android:text="手机号"/>
+
+        <TextView
+            android:id="@+id/entrust_tv_phone"
+            style="@style/entrustRightText"
+            android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+            android:hint="请输入手机号码"/>
+
+    </LinearLayout>
+
+    <View style="@style/horizontalBigLine"
+        android:layout_marginBottom="@dimen/marginLeft"/>
+
+    <LinearLayout
+        style="@style/entrustLLStyle">
+
+        <TextView
+            style="@style/entrustLeftTitle"
+            android:text="小区"/>
+
+        <TextView
+            android:id="@+id/entrust_tv_est"
+            style="@style/entrustRightText"
+            android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+            android:hint="请选择房源所在小区"/>
+
+    </LinearLayout>
+
+
+    <View
+        style="@style/horizontalBlackLine"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        style="@style/entrustLLStyle">
+
+        <TextView
+            style="@style/entrustLeftTitle"
+            android:text="户型"/>
+
+        <TextView
+            android:id="@+id/entrust_tv_room"
+            style="@style/entrustRightText"
+            android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+            android:hint="请选择户型(选填)"/>
+
+    </LinearLayout>
+
+
+    <View
+        style="@style/horizontalBlackLine"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        style="@style/entrustLLStyle"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/entrust_left_title"
+            style="@style/entrustLeftTitle"
+            android:text="期望售价"/>
+
+        <EditText
+            android:id="@+id/entrust_price_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="最低"
+            android:inputType="number"
+            android:maxLength="6"/>
+
+        <TextView
+            android:id="@+id/entrust_price_tips"
+            android:layout_width="0dp"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/entrust_tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_calculator"
+            android:drawablePadding="6dp"
+            android:textColor="@color/textRed"
+            android:text="估价"/>
+
+    </LinearLayout>
+
+    <View style="@style/horizontalBigLine"
+        android:layout_marginBottom="@dimen/marginLeft"/>
+
+    <EditText
+        android:id="@+id/entrust_tv_information"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="top|left"
+        android:hint="请输入备注说明, 有助于更快成交..."
+        android:maxLength="140"
+        android:textSize="@dimen/subTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="68px">
+
+        <CheckBox
+            android:id="@+id/entrust_agreement_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@drawable/cb_bt_selector"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已阅读并同意"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/grayText"/>
+
+        <TextView
+            android:id="@+id/entrust_tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《中原地产租售委托协议》"
+            android:textColor="#b28d4d"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/entrust_tv_commit"
+        style="@style/redButton"
+        android:text="提交"/>
+
+
+</LinearLayout>

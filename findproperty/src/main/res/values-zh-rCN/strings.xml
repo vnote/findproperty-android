@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">上海中原</string>
+
+    <string name="item_more_loading">正在载入&#8230;</string>
+    <string name="item_more_load_error">加载失败，点击重试</string>
+
+    <!--setting activity-->
+    <string name="setting_current_language">中文</string>
+    <string name="setting_language">语言设置</string>
+    <string name="setting_push">推送设置</string>
+    <string name="setting_cache">清除缓存</string>
+    <string name="setting_update">检查更新</string>
+    <string name="setting_suggest">建议反馈</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_reword">为上海中原打分</string>
+
+    <!--minefragment-->
+    <string name="mine_say">，你好！</string>
+    <string name="mine_wait_1">约看单</string>
+    <string name="mine_wait_2">待约看</string>
+    <string name="mine_wait_3">约看记录</string>
+    <string name="mine_label_1">我在找房</string>
+    <string name="mine_label_2">我是业主</string>
+    <string name="mine_menu_1">我的消息</string>
+    <string name="mine_menu_2">我的意向</string>
+    <string name="mine_menu_3">我的收藏</string>
+    <string name="mine_menu_4">我的活动</string>
+    <string name="mine_menu_5">贷款计算</string>
+    <string name="mine_menu_6">税费计算</string>
+    <string name="mine_menu_7">建议反馈</string>
+    <string name="mine_menu_8">我要出售</string>
+    <string name="mine_menu_9">业主委托</string>
+    <string name="mine_menu_10">我的委托</string>
+
+    <!--mainactivity-->
+    <string name="main_bottom_1">优惠</string>
+    <string name="main_bottom_2">委托</string>
+    <string name="main_bottom_3">找房</string>
+    <string name="main_bottom_4">聊天</string>
+    <string name="main_bottom_5">我的</string>
+
+    <!--loginactivity-->
+    <string name="login_default_name">尊敬的用户</string>
+
+
+    <!--mapfragment-->
+    <string name="map_float_btn">打开列表</string>
+    <string name="map_query_1_1">二手房</string>
+    <string name="map_query_1_2">租房</string>
+    <string name="map_query_1_3">新房</string>
+    <string name="map_query_1_4">小区</string>
+    <string name="map_query_no_requirement">不限</string>
+    <string name="map_query_house_type">房型</string>
+    <string name="map_query_house_floor">楼层</string>
+    <string name="map_query_house_area">面积</string>
+    <string name="map_query_house_direction">朝向</string>
+    <string name="map_query_house_age">房龄</string>
+    <string name="map_query_house_fitment">装修</string>
+    <string name="map_query_house_feature">特色</string>
+    <string name="map_query_house_property">物业类型</string>
+    <string name="map_query_house_start">开盘时间</string>
+
+
+
+    <!--alert messages-->
+    <string name="map_draw_alert">圈画找房范围</string>
+    <string name="map_query_alert_1">区域内共</string>
+    <string name="map_query_alert_2">个楼盘</string>
+    <string name="map_query_alert_3">套房源</string>
+
+    <!--adviserdetailactivity-->
+    <string name="adviserdetail_say">的店铺</string>
+    <string name="adviserdetail_tab_1">二手房</string>
+    <string name="adviserdetail_tab_2">租房</string>
+    <string name="adviserdetail_label_1">服务小区:</string>
+    <string name="adviserdetail_label_2">是否拨打顾问%s的电话:</string>
+    <string name="adviserdetail_no_requirement">不限</string>
+    <string name="adviserdetail_nearby">附近</string>
+    <string name="adviserdetail_no_result">没有找到相关顾问</string>
+    <string name="adviserdetail_msg">尝试更换搜索条件查询</string>
+
+    <string name="adviserlist_no_more">关心你的每一平米</string>
+
+    <!--toolactivity-->
+    <string name="tool_tab_bar_1">商业贷款</string>
+    <string name="tool_tab_bar_2">公积金贷款</string>
+    <string name="tool_tab_bar_3">组合贷款</string>
+
+    <!--conversationlistfragment-->
+    <string name="conversationlist_btn">删除</string>
+
+    <!--tools activities-->
+    <string name="calc_type">计算方式</string>
+    <string name="calc_loan_total">贷款总额</string>
+    <string name="calc_mortgage_ratio">按揭比例</string>
+    <string name="calc_house_total">房屋总价</string>
+    <string name="calc_wan_yuan">万元</string>
+    <string name="calc_unit_year">年</string>
+    <string name="calc_down_payment">首付比例</string>
+    <string name="calc_loan_period">贷款年限</string>
+    <string name="calc_loan_type">还款方式</string>
+    <string name="calc_loan_rate">贷款利率</string>
+    <string name="calc_loan_rate_comb">商贷利率</string>
+    <string name="calc_average_interest">等额本息</string>
+    <string name="calc_first">首次购房</string>
+    <string name="calc_equals">=</string>
+    <string name="calc_multiply">×</string>
+    <string name="calc_interest_times">倍</string>
+    <string name="calc_percent">%</string>
+    <string name="calc_yes">是</string>
+    <string name="calc_house_type">房屋类型</string>
+    <string name="calc_house_area">房屋面积</string>
+    <string name="calc_house_original">房屋原价</string>
+    <string name="calc_ping">平</string>
+    <string name="calc_average_house">普通住宅</string>
+    <string name="calc_house_unit_price">房屋单价</string>
+    <string name="calc_yuan_ping">元/平</string>
+    <string name="calc_levy_type">征收方式</string>
+    <string name="calc_buy_years">房屋年限</string>
+    <string name="calc_buy_five_year">5年以上</string>
+    <string name="calc_buyer_first">买房家庭首次购房</string>
+    <string name="calc_seller_only">卖房家庭唯一住房</string>
+    <string name="btn_start_calc">开始计算</string>
+    <string name="calc_fund">公积金</string>
+    <string name="calc_business_loan">商业贷款</string>
+
+    <!--tax activity-->
+    <string name="price_total">总价</string>
+
+    <!--reservation-->
+
+    <!--news activity-->
+
+    <!--collection activity-->
+    <string name="collection_message">暂无收藏记录</string>
+
+    <!--userinfo setting-->
+
+    <!--subscribe activity-->
+
+    <!--common button text-->
+</resources>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.cetnaline.findproperty"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+
+    <uses-sdk android:minSdkVersion="14"/>
+    <!--桌面角标权限-->
+    <!--<uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--<uses-permission android:name="com.huawei.permission.sec.MDM"/>-->
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!--拨打电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!--电话状态-->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+
+    <!-- 启用错误分析功能，须添加该权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!--<uses-permission android:name="android.permission.FLASHLIGHT" />-->
+    <!--短信读取-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:configChanges="fontScale"
+        android:label="${APP_NAME}"
+        android:supportsRtl="true"
+        tools:replace="android:label"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainTabActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="${OPEN_INSTALL_SCHEME}"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.AdvertActivity"/>
+        <activity android:name=".ui.activity.TestActivity"/>
+        <activity android:name=".ui.activity.HouseList"/>
+        <activity android:name=".ui.activity.HouseDetail"/>
+        <activity android:name=".ui.activity.VillageDetail"/>
+        <activity android:name=".ui.activity.AdviserDetailActivity"/>
+        <activity android:name=".ui.activity.NearbyActivity"/>
+
+        <activity
+            android:name=".ui.activity.EntrustActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".ui.activity.DeputeActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".ui.activity.WebActivity"
+            android:hardwareAccelerated="true"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.activity.LoginActivity"/>
+        <activity android:name=".ui.activity.SettingActivity"/>
+        <activity android:name=".ui.activity.ToolActivity"/>
+        <activity
+            android:name=".ui.activity.LookAbout"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".ui.activity.TaxActivity"/>
+        <activity
+            android:name=".ui.activity.NewsActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.activity.CollectionActivity"/>
+        <activity android:name=".ui.activity.UserInfoSettingActivity"/>
+        <activity android:name=".ui.activity.ExchangeNameActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name=".ui.activity.ExchangePhoneActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity
+            android:name=".ui.activity.MySubscribeActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <activity android:name=".ui.activity.SearchActivity"/>
+        <activity android:name=".ui.activity.AboutUsActivity"/>
+        <activity android:name=".ui.activity.ImageBrowseActivity"/>
+        <activity android:name=".ui.activity.GuideActivity"/>
+        <activity android:name=".ui.activity.BookListActivity"/>
+        <activity android:name=".ui.activity.CommentActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name=".ui.activity.ScanActivity"/>
+        <activity android:name=".ui.activity.StoreSearchActivity"/>
+        <activity android:name=".ui.activity.EstateList"/>
+        <activity android:name=".ui.activity.StoreStaffListActivity"/>
+        <activity android:name=".ui.activity.StoreSearchDetailActivity"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name=".ui.activity.IntentSettingActivity"/>
+        <activity android:name=".ui.activity.ConversationListActivity"/>
+        <activity android:name=".ui.activity.ConsultFormActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".ui.activity.DeputePhotoSelectActivity"/>
+
+        <activity
+            android:name=".ui.activity.PanoramaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor">
+        </activity>
+
+        <activity android:name=".ui.activity.EstateMapSelectActivity"/>
+
+        <meta-data
+            android:name="com.cetnaline.findproperty.utils.glide.GlideModelConfig"
+            android:value="GlideModule"/>
+
+        <!--<service-->
+            <!--android:name=".net.service.MyDownLoadServer"-->
+            <!--android:exported="false"/>-->
+
+        <service android:name=".ui.service.DataService"
+                 android:exported="false"/>
+
+        <!--dqf-->
+        <activity
+            android:name=".ui.activity.AdviserListActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+
+        <!-- 第三方服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="mEZCsHy3N6B145ymmQpAmWD3S1O3bxqa"/>
+
+        <meta-data
+            android:name="design_width"
+            android:value="750">
+        </meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1334">
+        </meta-data>
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="f90033de783f4125f13027532c7b8a2e" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCdcWrjK9chV6JsGcqb8kSTrpIwFqNa38Tp5GAQF8Vx/Myz1A8Zi4GkfFaxVWPY/9clv7nijnp2Ol5I29wVu3ISYk6gcCHuX491OgKEqVyJBHSn6LHjDalEC8pU+2LxEVxIELBrnDDulzzxk6tWTaq7dKcPxfR0VqnxB2yolYKkV/0ocI8QzTeXEcCmLJVMPV0KKNWfW9eiEvEYICZQbNdbFW2vnRuhDCDH7YBRZJ41IuQKGf41Kx3KeSqI4yw4fIeAVaaQjM2lZc1BcqOBp8zTDuuxI/q7SnAgUfWXfbDLLSy6fDXKz7q233uZo0QNCegQC+Uh9LZvISICS9hbQiuzAgMBAAECggEAE/pcUc8yUSzJk2YCa59mTEcOjcORnupeFj/AYMpjZ39oijkSYW9uV+zfI0lujg6IwmV9tN3XdEEbzar4Vlmes+59g6Y26ASAM6PUxfinoUtLcjL4v5LwM447cmUjvOszBoH3oPAE1YGjXhQa3aylSXwX5sx7pHeKwObsRsgR98BvgVP1ntWVDFoBX2+zbOU1Rs0ncehH62LtGtT0hEG6T9cbSUmPQW9d66e9SPgCzJDHuFwVGN48dYkxFdUOh5U1JiyTDlIv6Svj7YUV1l/9sudqdtH56n+DlwCASuBAyYeibD+68ICBROX1vwvErNHH7c+hys/8HzkpZfFjTUBCAQKBgQDSgadoztZFurUX3ZbJGKreCsuQ4p90JLmCsT+/aw0rHWVyCW1GE9txwiJZGsPmWNVQJqdRm8gUZ8qmjt1tlokiZzOYCWRlOB6YKIvaxr8FZuHOU5y4TTQxuhLykShNVr6S18ej8nEoryy2xHMFaRF7HXa5nLGeRjvBRgGPF26NwQKBgQC/eAKvtvfu+BjCGu4fDb/9Vbsm95p4T1T7tUA4zkc2eXzojQqB2ZO0eIFdniU4RhcFA/ZDCtDVTlA8V2q0hAlp62V/Wspi584B885sRYEYmnDrrDLjeju8adB1EWYlN1fyDfuk7JSyIBpeOrqohPzV30OK/7pSrH0vgjURhrP+cwKBgHtj0kxmCUVgNqxhj/QaSHXU4BPyMsMyj6bi3NoIFvTxyzf3/Jx6IURiJh4SyUepRIgx0BvO8426dRgCYBrPhVysH5r7zmRia9SG18uKegfhkXSOoCuL3Y9UYazbl0MWGKkcYIJiJyBQ5iXPqxg9yShgUepkxdxfkMEultVYR85BAoGAH/Aw4oauzNntp1M+rUdp4yRN164twivZjTMqx08BagDR6Si9u/NDRDNlwOwEYWKvrFKA3aYMN8iccbRTRFFSEK0HfTrzz5PDNWgp4r2lTylT9LwAsRlOpZsw/pYsZ8DXlrTmaRhdpWjdfSJmyH2Gf1aCucj2l5vWNfqOR6IknCkCgYEAmwDdEOgUCEsdsBHA7N8ZuZWfH6Lob1+zbiVi28Fo+QoZ4yOIPVyTxpsy+/Lc6/l7jRqaI+gMozEVrAKq0zUd9S6JPrjS+6vANBhinJ4S8aM/ocSN2SQbu5c1LJ3OtJW0m+reNEppn5zmir5BjClNs7GsJVFuTqAJ9A9eEe6j6wg=" />
+
+        <!--openinstall key-->
+        <meta-data
+            android:name="com.openinstall.APP_KEY"
+            android:value="${OPEN_INSTALL_KEY}" />
+
+        <!--rong cloud-->
+        <activity
+            android:name=".ui.activity.ConversationActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="com.cetnaline.findproperty"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+
+
+        <!--rong cloud-->
+        <service
+            android:name=".ui.service.RongCloudPushService"
+            android:exported="false"
+            android:process="io.rong.push">
+        </service>
+
+        <receiver
+            android:name=".ui.broadcastreceiver.RcReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED"/>
+            </intent-filter>
+        </receiver>
+
+        <!--jpush receiver-->
+        <receiver
+            android:name=".ui.broadcastreceiver.MyJPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+
+                <category android:name="${applicationId}"/>
+            </intent-filter>
+        </receiver>
+
+        <!--state receiver-->
+        <!--<receiver-->
+            <!--android:name=".ui.broadcastreceiver.StateBroadcastReceiver"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--短信广播-->
+        <receiver android:name=".ui.broadcastreceiver.SMSReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!--QQ-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="${SHARE_QQ_KEY}"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan|adjustUnspecified|stateHidden"/>
+
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <!--baidu mtj-->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="${CHANNEL_VALUE}"/>
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="56cfcc4f11"/>
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true"/>
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START"/>
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false"/>
+
+        <!--talking data-->
+        <service android:name="com.talkingdata.sdk.TDAntiCheatingService"
+            android:process="com.talkingdata.sdk.TDAntiCheatingService">  <!--用户质量评估Service可以配置在主进程或者单独进程-->
+            <intent-filter>
+                <action android:name="com.talkingdata.sdk.TDAntiCheatingService" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="TD_APP_ID" android:value="${TALKING_DATA_KEY}" />
+        <meta-data android:name="TD_CHANNEL_ID" android:value="${CHANNEL_VALUE}" />
+
+    </application>
+
+</manifest>

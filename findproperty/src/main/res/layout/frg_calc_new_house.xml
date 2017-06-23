@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background"
+    tools:ignore="all">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/CalcTableLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CalcTableTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/calc_house_area" />
+
+            <LinearLayout
+                style="@style/MineCalcLinearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/aet_house_area"
+                    style="@style/MineTableEditText"
+                    android:layout_width="60dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/MineCalcRightTextView"
+                    android:text="@string/calc_ping" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/CalcTableLayout">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/CalcTableTextView"
+                android:layout_centerVertical="true"
+                android:text="@string/calc_house_unit_price" />
+
+            <LinearLayout
+                style="@style/MineCalcLinearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/aet_house_unit_price"
+                    style="@style/MineTableEditText"
+                    android:layout_width="60dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/MineCalcRightTextView"
+                    android:text="@string/calc_yuan_ping" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_tax_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:enabled="false"
+        android:text="@string/btn_start_calc"
+        android:textColor="@color/btn_custom_txt_color"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/btn_custom_bg"/>
+
+</RelativeLayout>

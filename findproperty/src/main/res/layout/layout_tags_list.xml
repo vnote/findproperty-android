@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="all">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/atv_list_tag_fir"
+        style="@style/ListTagTextView"
+        tools:text="满五唯一" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/atv_list_tag_sec"
+        style="@style/ListTagTextView"
+        android:layout_marginLeft="5dp"
+        tools:text="满五唯一" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/atv_list_tag_thi"
+        style="@style/ListTagTextView"
+        android:layout_marginLeft="5dp"
+        tools:text="满五唯一" />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginLeft="@dimen/marginLeft"
+    android:layout_marginRight="@dimen/marginRight"
+    android:background="@android:color/white"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="长阳路分行"
+            android:textSize="@dimen/gild_sub"/>
+        <TextView
+            android:id="@+id/store_location"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="@dimen/textSmall"
+            android:textColor="@color/grayText"
+            android:text="长阳路1180号" />
+
+        <TextView
+            android:id="@+id/store_distance"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textSize="@dimen/textSmall"
+            android:textColor="@color/grayText"
+            android:text="距离:12Km" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical">
+
+        <ImageView
+            android:id="@+id/store_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_store_phone"/>
+
+        <ImageView
+            android:id="@+id/store_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            app:srcCompat="@drawable/ic_store_loc"/>
+
+        <ImageView
+            android:id="@+id/store_staff"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/menu_search_jinjiren_black"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

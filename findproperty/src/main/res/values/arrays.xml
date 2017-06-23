@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mapSecond">
+        <item>二手房</item>
+        <item>区域</item>
+        <item>总价</item>
+        <item>更多</item>
+    </string-array>
+
+    <string-array name="mapRent">
+        <item>租房</item>
+        <item>区域</item>
+        <item>租金</item>
+        <item>更多</item>
+    </string-array>
+
+    <string-array name="mapNew">
+        <item>新房</item>
+        <item>区域</item>
+        <item>均价</item>
+        <item>更多</item>
+    </string-array>
+
+    <string-array name="listSecond">
+        <item>区域</item>
+        <item>总价</item>
+        <item>户型</item>
+        <item>更多</item>
+    </string-array>
+
+    <string-array name="listRent">
+        <item>区域</item>
+        <item>租金</item>
+        <item>户型</item>
+        <item>更多</item>
+    </string-array>
+
+    <string-array name="listNew">
+        <item>区域</item>
+        <item>均价</item>
+        <item>户型</item>
+        <item>更多</item>
+    </string-array>
+
+    <string-array name="listEstate">
+        <item>区域</item>
+        <item>均价</item>
+        <item>建造年代</item>
+        <item>物业类型</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>先生</item>
+        <item>女士</item>
+        <item>取消</item>
+    </string-array>
+
+    <string-array name="defaultBuilding">
+        <item>自定义</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="roomType1">
+        <item>1室</item>
+        <item>2室</item>
+        <item>3室</item>
+        <item>4室</item>
+        <item>5室</item>
+        <item>6室</item>
+    </string-array>
+
+    <string-array name="roomType2">
+        <item>0厅</item>
+        <item>1厅</item>
+        <item>2厅</item>
+        <item>3厅</item>
+        <item>4厅</item>
+        <item>5厅</item>
+        <item>6厅</item>
+    </string-array>
+
+    <string-array name="roomType3">
+        <item>0卫</item>
+        <item>1卫</item>
+        <item>2卫</item>
+        <item>3卫</item>
+        <item>4卫</item>
+        <item>5卫</item>
+        <item>6卫</item>
+    </string-array>
+</resources>

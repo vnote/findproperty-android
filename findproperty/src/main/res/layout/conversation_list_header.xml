@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.cetnaline.findproperty.widgets.CustomMenuItem
+        android:id="@+id/shortcut1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_img="@drawable/ic_shortcut_2"
+        app:title="政策咨询"
+        app:sub_title="政策贷款专家咨询服务" />
+    <com.cetnaline.findproperty.widgets.CustomMenuItem
+        android:id="@+id/shortcut2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_img="@drawable/ic_shortcut_1"
+        app:title="法律咨询"
+        app:sub_title="提供法律事务专家咨询服务" />
+    <com.cetnaline.findproperty.widgets.CustomMenuItem
+        android:id="@+id/shortcut3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_img="@drawable/ic_shortcut_3"
+        app:title="举报投诉"
+        app:sub_title="虚假房源举报与顾问投诉服务" />
+</LinearLayout>

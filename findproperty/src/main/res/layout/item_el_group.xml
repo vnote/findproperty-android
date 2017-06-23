@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View style="@style/horizontalBigLine"
+        android:layout_marginBottom="@dimen/marginLeft"/>
+
+    <TextView
+        android:id="@+id/group_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_right_arrow_gray_sel"
+        android:padding="10dp"
+        android:textSize="@dimen/subTitle"
+        android:textColor="@color/title_color"
+        android:gravity="center_vertical"
+        android:text="小区名称"/>
+
+    <View
+        style="@style/horizontalBlackLine"/>
+
+</LinearLayout>
